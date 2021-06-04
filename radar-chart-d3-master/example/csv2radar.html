@@ -79,6 +79,7 @@ RadarChart.defaultConfig.radius = 3;
 RadarChart.defaultConfig.w = w;
 RadarChart.defaultConfig.h = h;
 RadarChart.draw("#chart-container", data);
+console.log(data);
 function animate(elem,time) {
     if( !elem) return;
     var to = elem.offsetTop;
@@ -95,6 +96,7 @@ function animate(elem,time) {
 var divVal = document.getElementById('chart-container');
 animate(divVal,600);
 }
+
 </script>
 
 
