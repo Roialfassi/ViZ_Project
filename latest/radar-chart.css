@@ -2,7 +2,10 @@
   stroke: grey;
   stroke-width: 0.5;
 }
-
+/* .radar-chart{
+  position: absolute;
+  align-content: center;
+} */
 .radar-chart .axis line {
   stroke: grey;
   stroke-width: 1;
@@ -33,7 +36,9 @@
 .radar-chart .tooltip.visible {
   opacity: 1;
 }
-
+.radar-chart{
+  margin: auto;
+}
 /* area transition when hovering */
 .radar-chart .area {
   stroke-width: 2;

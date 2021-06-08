@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+<link rel="stylesheet" href="radar-chart.css">
+<head>
+  <style>
+    body {
+      padding: 20px;
+    }
+    .radar-chart .area {
+      fill-opacity: 0.7;
+    }
+    .radar-chart.focus .area {
+      fill-opacity: 0.3;
+    }
+    .radar-chart.focus .area.focused {
+      fill-opacity: 0.9;
+    }
+    .area.germany, .germany .circle {
+      fill: #FFD700;
+      stroke: none;
+    }
+    .area.argentina, .argentina .circle {
+      fill: #ADD8E6;
+      stroke: none;
+    }
+    textarea{
+      display: none;
+    }
+    #missing{
+      display: none;
+    }
+    .chart-container{
+      align-content: center;
+      margin: auto;
+      width: 50%;
+      /* border: 3px solid green; */
+      /* padding: 10px; */
+    }
+    
+  </style>
+
+  <script type="text/javascript" src="http://d3js.org/d3.v3.js"></script>
+  <script type="text/javascript" src="radar-chart.js"></script>
+  
+
+  </head>
+  <body>
+<script type="text/javascript" src="radar.js"></script>
+<div id="chart-container" style="align-items: center;"></div>
+<script type="text/javascript">
+    // RadarChart.defaultConfig.levelTick = true;
+  </script>
+
+</body>
+</html>
