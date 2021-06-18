@@ -49,4 +49,19 @@ console.log(data);
   var divVal = document.getElementById('chart-container');
   // animate(divVal,600);
 }
+function update(h) {
+    // update position and text of label according to slider scale
+    handle.attr("cx", x(h));
+    label
+      .attr("x", x(h))
+      .text((h));
+  
+    // filter data set and redraw plot
+    var newData = data.filter(function(d) {
+      return d.className == h;
+    })
+    drawPlot(newData);
+  }
+
 showRadar();
+update("1961");

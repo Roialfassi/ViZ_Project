@@ -25,8 +25,18 @@ var slider = svgSlider.append("g")
   .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
     .attr("class", "track-inset")
   .select(function() { return this.parentNode.appendChild(this.cloneNode(true)); })
-    .attr("class", "track-overlay")
-    .call(d3.behavior.drag());
+    .attr("class", "track-overlay");
+
+    /*Move Slider*/ 
+slider.call(d3.behavior.drag()
+    .on("dragstart", function() {
+    dispatch.sliderChange(x.invert(d3.mouse(handle.node())[0]));
+    d3.event.sourceEvent.preventDefault();
+    })
+    .on("drag", function() {
+    dispatch.sliderChange(x.invert(d3.mouse(handle.node())[0]));
+    }));
+
         // .on("start.interrupt", function() { slider.interrupt(); })
         // .on("start drag", function() { update(x.invert(d3.event.x)); }));
 
@@ -49,5 +59,5 @@ var handle = slider.insert("circle", ".track-overlay")
 var label = slider.append("text")  
     .attr("class", "label")
     .attr("text-anchor", "middle")
-    .text(formatDate(startDate))
+    .text(startDate)
     .attr("transform", "translate(0," + (-25) + ")")
