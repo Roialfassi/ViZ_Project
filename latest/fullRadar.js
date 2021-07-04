@@ -38,26 +38,26 @@ function update(h) {
 
 
   /* slider */
-//   var width = 600;
+// var width = 600;
 
-//   var startDate = 1961,
-//     endDate = 2019;
+var startDate = 1961,
+endDate = 2019;
 
-//   var x = d3.scale.linear()
-//       .domain([startDate, endDate])
-//       .range([0, width])
-//       .clamp(true);
+// var x = d3.scale.linear()
+//     .domain([startDate, endDate])
+//     .range([0, width])
+//     .clamp(true);
 
-//   var dispatch = d3.dispatch("sliderChange");
-  
-//   var slider = d3.select(".slider")
-//       .style("width", width + "px");
-  
-//   var sliderTray = slider.append("div")
-//       .attr("class", "slider-tray");
-  
-//   var sliderHandle = slider.append("div")
-//       .attr("class", "slider-handle");
+// var dispatch = d3.dispatch("sliderChange");
+
+// var slider = d3.select(".slider")
+//     .style("width", width + "px");
+
+// var sliderTray = slider.append("div")
+//     .attr("class", "slider-tray");
+
+// var sliderHandle = slider.append("div")
+//     .attr("class", "slider-handle");
   
   
 //   sliderHandle.append("div")
@@ -96,7 +96,19 @@ function update(h) {
 //     .attr("text-anchor", "middle")
 //     .text(startDate)
 //     .attr("transform", "translate(0," + (-25) + ")")
-/* slider */
+// /* slider */
 // drawChart();
-update(2019);
+
+
+update(2015);
 // console.log("dataset1 + "+ dataset1);
+
+
+// Initialize slider
+var slider = d3.slider().min(startDate).max(endDate).ticks(20).value(startDate);
+// Render the slider in the div
+d3.select('#slider').call(slider);
+// .call(d3.drag()
+//         .on("start.interrupt", function() { slider.interrupt(); })
+//         .on("start drag", function(d) { update(d)}));
+
