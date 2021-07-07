@@ -46,11 +46,11 @@ var Linechart = (function(){
             .curve(d3.curveMonotoneX);
 
         // start drawing the Linechart from the csv
-        d3.csv("csv/summer_year_country_event.csv").then(data => {
+        d3.csv("csv/avgByYearPerCountry.csv").then(data => {
 
             data.forEach(d => {
                 d.Year = +d.Year;
-                d.TotalMedals = (+d.GoldCount + +d.SilverCount + +d.BronzeCount);
+                d.TotalMedals = +d.mean_temp;
             });
 
             // Create a nested type data to sort the csv by country and year.
@@ -63,7 +63,7 @@ var Linechart = (function(){
                     };
                 })
                 .map(data);
-
+            console.log(processedData);
             // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
             years.forEach(year => {
                 if(!(processedData.get(countrySelection[0]).has(year))){
@@ -154,10 +154,10 @@ var Linechart = (function(){
      * Updates the Linechart according to the filters. 
      */
     var update = function() {
-        d3.csv("csv/summer_year_country_event.csv").then(data => {
+        d3.csv("csv/avgByYearPerCountry.csv").then(data => {
             data.forEach(d => {
                 d.Year = +d.Year;
-                d.TotalMedals = (+d.GoldCount + +d.SilverCount + +d.BronzeCount);
+                d.TotalMedals = +d.mean_temp;
             });
 
             let processedData = d3.nest()

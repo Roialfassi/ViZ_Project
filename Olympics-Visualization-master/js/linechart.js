@@ -63,7 +63,7 @@ var Linechart = (function(){
                     };
                 })
                 .map(data);
-
+                console.log(processedData);
             // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
             years.forEach(year => {
                 if(!(processedData.get(countrySelection[0]).has(year))){
