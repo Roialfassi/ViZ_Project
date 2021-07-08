@@ -132,6 +132,7 @@ var WorldMap = (function(){
                         return getColor(convertNameToIOCCode(d.properties.name_long));
                     } else {
                         return NOT_SELECTED_COUNTRY_COLOR;
+                        // return "purple";
                     }
                 })
                 // add a mouseover action to show name label for feature/country
@@ -173,7 +174,8 @@ var WorldMap = (function(){
                             else {
                                 d3.selectAll(".country").classed("country-on", false)
                                     .attr("fill", function(d) {
-                                    return NOT_SELECTED_COUNTRY_COLOR;
+                                    // return NOT_SELECTED_COUNTRY_COLOR;
+                                    return "purple";
                                 });
     
                                 d3.select(this).classed("country-on", true);
@@ -193,7 +195,8 @@ var WorldMap = (function(){
                             if(d3.select(this).classed("country-on")) {
                                 d3.select(this).classed("country-on", false)
                                     .attr("fill", function(d) {
-                                    return NOT_SELECTED_COUNTRY_COLOR;
+                                        return "purple";
+                                    // return NOT_SELECTED_COUNTRY_COLOR;
                                 });
     
                                 removeCountryFromSelection(d.properties.name_long);

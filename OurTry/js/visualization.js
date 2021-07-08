@@ -132,7 +132,7 @@ var loadDictionary = function(callback) {
             iocCodeDictionary[element.CountryCode] = element.CountryName;
         });
 
-         randomizeInitialCountry(data, "FRA");
+         randomizeInitialCountry(data, "USA");
 
          callback.resolve();
     })

@@ -10,7 +10,8 @@ var WorldMap = (function(){
 
     const width = 2400,
         height = 1000;
-
+    var myColor = d3.scaleLinear().domain([-2,3.5])
+        .range(["#fff5f0","#67000d"])
     let svg;
     
     /**
@@ -51,9 +52,10 @@ var WorldMap = (function(){
         function initiateZoom() {
             // Define a "minzoom" whereby the "Countries" is as small possible without leaving white space at top/bottom or sides  
             minZoom = Math.max( 2 * $("#worldmap").width() / width, 2 * $("#worldmap").height() / height);
-    
+            // minZoom = Math.max( 1 * $("#worldmap").width() / width, 2 * $("#worldmap").height() / height);
+
             maxZoom = 20 * minZoom;
-    
+            
             // define X and Y offset for centre of map to be shown in centre of holder
             midX = ($("#worldmap").width() - (minZoom * width)) / 2;
             midY = ($("#worldmap").height() - (minZoom * height)) / 2;
@@ -66,6 +68,7 @@ var WorldMap = (function(){
             // change zoom transform to min zoom and centre offsets
             svg.call(zoom.transform, d3.zoomIdentity.translate(midX, midY).scale(minZoom));
         }
+
         // on window resize
         $(window).resize(function () {
             // Resize SVG
@@ -103,6 +106,34 @@ var WorldMap = (function(){
             .attr('stroke-width', 1);
         
         // get map data
+    d3.csv("csv/avgByYearPerCountry.csv").then(data => {
+
+            data.forEach(d => {
+                d.Year = +d.Year;
+                d.TotalMedals = +d.mean_temp;
+            });
+
+            // Create a nested type data to sort the csv by country and year.
+            let processedData = d3.nest()
+                .key(d => d.Country)
+                .key(d => d.Year)
+                .rollup(values => {
+                    return {
+                        "TotalMedals" : d3.sum(values, d => parseFloat(d.TotalMedals)) 
+                    };
+                })
+                .map(data);
+            console.log(processedData);
+            // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
+            // years.forEach(year => {
+            //     if(!(processedData.get(countrySelection[0]).has(year))){
+            //         processedData.get(countrySelection[0]).set(year, { TotalMedals:0 });
+            //     }
+            // })
+            ;
+
+
+
         d3.json("js/worldmap/simple_map.json").then(function (json) {
             //Bind data and create one path per GeoJSON feature
             countriesGroup = svg.append("g")
@@ -126,12 +157,17 @@ var WorldMap = (function(){
                     }
                 })
                 .attr("fill", function(d) {
+                    console.log(d);
+                    console.log(d.properties.brk_name);
                     if (d3.select(this).classed("non-selectable-country")) {
                         return "url(#diagonalHatch)";
                     } if (d3.select(this).classed("country country-on")) {
                         return getColor(convertNameToIOCCode(d.properties.name_long));
                     } else {
-                        return NOT_SELECTED_COUNTRY_COLOR;
+                        // return "purple";
+                        console.log(processedData.get(d.properties.adm0_a3_us).get(2019).TotalMedals)
+                        return myColor(0);
+                        // return NOT_SELECTED_COUNTRY_COLOR;
                     }
                 })
                 // add a mouseover action to show name label for feature/country
@@ -174,6 +210,7 @@ var WorldMap = (function(){
                                 d3.selectAll(".country").classed("country-on", false)
                                     .attr("fill", function(d) {
                                     return NOT_SELECTED_COUNTRY_COLOR;
+                                    // return "purple";
                                 });
     
                                 d3.select(this).classed("country-on", true);
@@ -214,6 +251,11 @@ var WorldMap = (function(){
                 });
             initiateZoom();
         });
+
+    });
+
+
+
     
         // apply zoom to countriesGroup
         function zoomed() {
@@ -288,3 +330,6 @@ var WorldMap = (function(){
 
 })();
 
+// function getCountryColor(year , country) {
+    
+// }

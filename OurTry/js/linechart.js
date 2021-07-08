@@ -33,7 +33,7 @@ var Linechart = (function(){
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(d => {
-                return "<strong>" + d.value.TotalMedals + "</strong> Medals in <strong>" + d.key + "</strong>";
+                return "<strong>" + d.value.TotalMedals.toFixed(3) + "</strong> Temperature Difference in <strong>" + d.key + "</strong>";
             });
 
     /**
@@ -71,8 +71,9 @@ var Linechart = (function(){
                 }
             });
 
-            yScale.domain([0, (d3.max(processedData.get(countrySelection[0]).entries(), d => d.value.TotalMedals + 10 ))]);
-
+            // yScale.domain([-2, (d3.max(processedData.get(countrySelection[0]).entries(), d => d.value.TotalMedals + 1 ))]);
+            yScale.domain([-2, 3.5]);
+            
             svg = d3.select("#linechart")
                 .append("svg")
                 .attr("width", width)
@@ -106,7 +107,9 @@ var Linechart = (function(){
                 .attr("x", 0 - (height / 2) + margin.right)
                 .attr("dy", "1em")
                 .style("text-anchor", "middle")
-                .text("Medals");  
+                .text("Temperature Change °C");
+
+        
 
             // Create 4 line Entitities
             for(i = 0; i < 4; i++) {
@@ -125,7 +128,7 @@ var Linechart = (function(){
                     .attr("fill", d => d3.rgb(getColor(countrySelection[0])))
                     .attr("cx", (d, i) => xScale(i))
                     .attr("cy", d => yScale(d.value.TotalMedals))
-                    .attr("r", 8)
+                    .attr("r", 3)
                     .attr("stroke", d => getCSSColor('--main-dark-color'))
                     .attr("opacity", 1)
                     .on('mouseover', function(d){
@@ -143,12 +146,14 @@ var Linechart = (function(){
                             .ease(d3.easeElastic)
                             .duration(animationTime)
                             .attr("stroke", d => getCSSColor('--main-dark-color'))
-                            .attr("r", d => (checkIfYearInInterval(d.key) ? 8 : 4))
+                            .attr("r",3 /* d => (checkIfYearInInterval(d.key) ? 8 : 4)*/)
                             .attr("stroke-width", 1);
                     });
             }
         });
     };
+
+ 
 
     /**
      * Updates the Linechart according to the filters. 
@@ -211,7 +216,7 @@ var Linechart = (function(){
                 // Readjust the Y Scale.
                 if(bestDomain[1] < d3.extent(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; })[1]){
                     bestDomain = d3.extent(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; });
-                    yScale.domain(bestDomain).nice()
+                    // yScale.domain(bestDomain).nice()
                 }
             });
 
@@ -253,7 +258,7 @@ var Linechart = (function(){
                             :  d3.rgb(getColor(country)).brighter());
                     })
                     .attr("opacity", d => (checkIfYearInInterval(d.key) ? 1 : 0.6))
-                    .attr("r", d => (checkIfYearInInterval(d.key) ? 8 : 4));
+                    .attr("r", 3/*d => (checkIfYearInInterval(d.key) ? 8 : 4)*/);
 
                     // Make line visible
                     showLine(i);
