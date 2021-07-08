@@ -11,6 +11,7 @@ var selectedNode = null,
     iocCodeDictionary = {};
 
 
+
 // colors used throughout the visualization
 const eventsColors = d3.scaleOrdinal(d3.schemeSet3),
     countryColors = ["#fb8072", "#ffffb3", "#8dd3c7", "#bebada"];
@@ -71,6 +72,7 @@ function updateDashboardState(nextState, initialUpdate = false) {
         Bubblechart.update();
         Linechart.update();
         Scatterplot.update();
+        WorldMap.update();
     }
 
     let yearsText = 

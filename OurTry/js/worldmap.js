@@ -12,7 +12,8 @@ var WorldMap = (function(){
         height = 1000;
     var myColor = d3.scaleLinear().domain([-2,3.5])
         .range(["#fff5f0","#67000d"])
-    let svg;
+
+
     
     /**
      * Initializes the Worldmap Entity.
@@ -106,7 +107,7 @@ var WorldMap = (function(){
             .attr('stroke-width', 1);
         
         // get map data
-    d3.csv("csv/avgByYearPerCountry.csv").then(data => {
+    d3.csv("csv/‏‏avgByYearPerCountryHeatMAP.csv").then(data => {
 
             data.forEach(d => {
                 d.Year = +d.Year;
@@ -115,7 +116,7 @@ var WorldMap = (function(){
 
             // Create a nested type data to sort the csv by country and year.
             let processedData = d3.nest()
-                .key(d => d.Country)
+                .key(d => d.Area)
                 .key(d => d.Year)
                 .rollup(values => {
                     return {
@@ -124,6 +125,7 @@ var WorldMap = (function(){
                 })
                 .map(data);
             console.log(processedData);
+
             // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
             // years.forEach(year => {
             //     if(!(processedData.get(countrySelection[0]).has(year))){
@@ -158,16 +160,21 @@ var WorldMap = (function(){
                 })
                 .attr("fill", function(d) {
                     console.log(d);
-                    console.log(d.properties.brk_name);
+                    // console.log(d.properties.name_long);
+                    // console.log(d.properties.brk_name);
                     if (d3.select(this).classed("non-selectable-country")) {
                         return "url(#diagonalHatch)";
                     } if (d3.select(this).classed("country country-on")) {
                         return getColor(convertNameToIOCCode(d.properties.name_long));
                     } else {
                         // return "purple";
-                        console.log(processedData.get(d.properties.adm0_a3_us).get(2019).TotalMedals)
-                        return myColor(0);
+                        // if(processedData.hasOwnProperty(d.properties.name_long))
+                        //     if(processedData.get(d.properties.name_long).hasOwnProperty(2019))
+                                // return myColor(processedData.get(d.properties.name_long).get(2019).TotalMedals)
+                        // return myColor(0);
+                        // console.log(d.properties.name_long+":"+processedData.hasOwnProperty(d.properties.name_long))
                         // return NOT_SELECTED_COUNTRY_COLOR;
+                        return myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals)
                     }
                 })
                 // add a mouseover action to show name label for feature/country
@@ -209,7 +216,8 @@ var WorldMap = (function(){
                             else {
                                 d3.selectAll(".country").classed("country-on", false)
                                     .attr("fill", function(d) {
-                                    return NOT_SELECTED_COUNTRY_COLOR;
+                                    return myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals)
+                                    // return NOT_SELECTED_COUNTRY_COLOR;
                                     // return "purple";
                                 });
     
@@ -230,7 +238,8 @@ var WorldMap = (function(){
                             if(d3.select(this).classed("country-on")) {
                                 d3.select(this).classed("country-on", false)
                                     .attr("fill", function(d) {
-                                    return NOT_SELECTED_COUNTRY_COLOR;
+                                    return myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals)
+                                    // return NOT_SELECTED_COUNTRY_COLOR;
                                 });
     
                                 removeCountryFromSelection(d.properties.name_long);
@@ -322,12 +331,52 @@ var WorldMap = (function(){
                 .duration(500)
                 .call(zoom.transform,d3.zoomIdentity.translate(dleft, dtop).scale(zoomScale));
         }
-    }
-
-    return {
-        initialize:initialize
     };
+    var update = function()
+    { 
+        d3.csv("csv/‏‏avgByYearPerCountryHeatMAP.csv").then(data => {
+            data.forEach(d => {
+                d.Year = +d.Year;
+                d.TotalMedals = +d.mean_temp;
+            });
 
+            // Create a nested type data to sort the csv by country and year.
+            let processedData = d3.nest()
+                .key(d => d.Area)
+                .key(d => d.Year)
+                .rollup(values => {
+                    return {
+                        "TotalMedals" : d3.sum(values, d => parseFloat(d.TotalMedals)) 
+                    };
+                })
+                .map(data);
+
+            console.log(yearFilter.initial);
+            countries.attr("fill", function(d) {
+                // console.log(d);
+                // console.log(d.properties.name_long);
+                // console.log(d.properties.brk_name);
+                if (d3.select(this).classed("non-selectable-country")) {
+                    return "url(#diagonalHatch)";
+                } if (d3.select(this).classed("country country-on")) {
+                    return getColor(convertNameToIOCCode(d.properties.name_long));
+                } else {
+                    // return "purple";
+                    // if(processedData.hasOwnProperty(d.properties.name_long))
+                    //     if(processedData.get(d.properties.name_long).hasOwnProperty(2019))
+                            // return myColor(processedData.get(d.properties.name_long).get(2019).TotalMedals)
+                    // return myColor(0);
+                    // console.log(d.properties.name_long+":"+processedData.hasOwnProperty(d.properties.name_long))
+                    // return NOT_SELECTED_COUNTRY_COLOR;
+                    return myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals)
+                }
+            })
+        })
+    }
+    return {
+        initialize:initialize,
+        update:update
+    };
 })();
 
 // function getCountryColor(year , country) {

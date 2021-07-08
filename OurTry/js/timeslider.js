@@ -48,7 +48,7 @@ var TimeSlider = (function(){
                     // reset radius of selected handle
                     handle1.attr("r", 8);
                     handle2.attr("r", 8);
-                    
+                    console.log(yearFilter.initial);
                     // if both handles are the same year make them bigger
                     if(handle1.attr("cx") == handle2.attr("cx")){
                         handle1.attr("r", 12);

@@ -235,6 +235,37 @@ ARG,Argentina,2016,0.497083333
 ARG,Argentina,2017,1.07025
 ARG,Argentina,2018,0.7665
 ARG,Argentina,2019,0.72725
+ARM,Armenia,1961,0
+ARM,Armenia,1962,0
+ARM,Armenia,1963,0
+ARM,Armenia,1964,0
+ARM,Armenia,1965,0
+ARM,Armenia,1966,0
+ARM,Armenia,1967,0
+ARM,Armenia,1968,0
+ARM,Armenia,1969,0
+ARM,Armenia,1970,0
+ARM,Armenia,1971,0
+ARM,Armenia,1972,0
+ARM,Armenia,1973,0
+ARM,Armenia,1974,0
+ARM,Armenia,1975,0
+ARM,Armenia,1976,0
+ARM,Armenia,1977,0
+ARM,Armenia,1978,0
+ARM,Armenia,1979,0
+ARM,Armenia,1980,0
+ARM,Armenia,1981,0
+ARM,Armenia,1982,0
+ARM,Armenia,1983,0
+ARM,Armenia,1984,0
+ARM,Armenia,1985,0
+ARM,Armenia,1986,0
+ARM,Armenia,1987,0
+ARM,Armenia,1988,0
+ARM,Armenia,1989,0
+ARM,Armenia,1990,0
+ARM,Armenia,1991,0
 ARM,Armenia,1992,-1.2675
 ARM,Armenia,1993,-0.7935
 ARM,Armenia,1994,0.309
@@ -381,6 +412,37 @@ AUT,Austria,2016,1.839833333
 AUT,Austria,2017,1.718583333
 AUT,Austria,2018,2.571916667
 AUT,Austria,2019,2.463333333
+AZE,Azerbaijan,1961,0
+AZE,Azerbaijan,1962,0
+AZE,Azerbaijan,1963,0
+AZE,Azerbaijan,1964,0
+AZE,Azerbaijan,1965,0
+AZE,Azerbaijan,1966,0
+AZE,Azerbaijan,1967,0
+AZE,Azerbaijan,1968,0
+AZE,Azerbaijan,1969,0
+AZE,Azerbaijan,1970,0
+AZE,Azerbaijan,1971,0
+AZE,Azerbaijan,1972,0
+AZE,Azerbaijan,1973,0
+AZE,Azerbaijan,1974,0
+AZE,Azerbaijan,1975,0
+AZE,Azerbaijan,1976,0
+AZE,Azerbaijan,1977,0
+AZE,Azerbaijan,1978,0
+AZE,Azerbaijan,1979,0
+AZE,Azerbaijan,1980,0
+AZE,Azerbaijan,1981,0
+AZE,Azerbaijan,1982,0
+AZE,Azerbaijan,1983,0
+AZE,Azerbaijan,1984,0
+AZE,Azerbaijan,1985,0
+AZE,Azerbaijan,1986,0
+AZE,Azerbaijan,1987,0
+AZE,Azerbaijan,1988,0
+AZE,Azerbaijan,1989,0
+AZE,Azerbaijan,1990,0
+AZE,Azerbaijan,1991,0
 AZE,Azerbaijan,1992,-0.794833333
 AZE,Azerbaijan,1993,-0.918416667
 AZE,Azerbaijan,1994,0.0505
@@ -546,10 +608,17 @@ BAR,Barbados,1976,-0.42
 BAR,Barbados,1977,-0.006083333
 BAR,Barbados,1978,0.230416667
 BAR,Barbados,1979,0.035666667
+BAR,Barbados,1980,0
+BAR,Barbados,1981,0
+BAR,Barbados,1982,0
+BAR,Barbados,1983,0
 BAR,Barbados,1984,-0.232583333
 BAR,Barbados,1985,-0.288416667
+BAR,Barbados,1986,0
 BAR,Barbados,1987,0.450583333
 BAR,Barbados,1988,0.273416667
+BAR,Barbados,1989,0
+BAR,Barbados,1990,0
 BAR,Barbados,1991,0.35975
 BAR,Barbados,1992,0.305166667
 BAR,Barbados,1993,0.404916667
@@ -561,6 +630,7 @@ BAR,Barbados,1998,0.96125
 BAR,Barbados,1999,0.32575
 BAR,Barbados,2000,0.205083333
 BAR,Barbados,2001,0.52575
+BAR,Barbados,2002,0
 BAR,Barbados,2003,0.886416667
 BAR,Barbados,2004,0.6915
 BAR,Barbados,2005,1.165
@@ -573,8 +643,42 @@ BAR,Barbados,2011,0.83475
 BAR,Barbados,2012,0.758166667
 BAR,Barbados,2013,0.868666667
 BAR,Barbados,2014,0.705916667
+BAR,Barbados,2015,0
 BAR,Barbados,2016,1.423166667
+BAR,Barbados,2017,0
 BAR,Barbados,2018,0.915333333
+BAR,Barbados,2019,0
+BLR,Belarus,1961,0
+BLR,Belarus,1962,0
+BLR,Belarus,1963,0
+BLR,Belarus,1964,0
+BLR,Belarus,1965,0
+BLR,Belarus,1966,0
+BLR,Belarus,1967,0
+BLR,Belarus,1968,0
+BLR,Belarus,1969,0
+BLR,Belarus,1970,0
+BLR,Belarus,1971,0
+BLR,Belarus,1972,0
+BLR,Belarus,1973,0
+BLR,Belarus,1974,0
+BLR,Belarus,1975,0
+BLR,Belarus,1976,0
+BLR,Belarus,1977,0
+BLR,Belarus,1978,0
+BLR,Belarus,1979,0
+BLR,Belarus,1980,0
+BLR,Belarus,1981,0
+BLR,Belarus,1982,0
+BLR,Belarus,1983,0
+BLR,Belarus,1984,0
+BLR,Belarus,1985,0
+BLR,Belarus,1986,0
+BLR,Belarus,1987,0
+BLR,Belarus,1988,0
+BLR,Belarus,1989,0
+BLR,Belarus,1990,0
+BLR,Belarus,1991,0
 BLR,Belarus,1992,1.272833333
 BLR,Belarus,1993,0.159666667
 BLR,Belarus,1994,0.873
@@ -603,6 +707,45 @@ BLR,Belarus,2016,1.907666667
 BLR,Belarus,2017,1.774166667
 BLR,Belarus,2018,2.103166667
 BLR,Belarus,2019,2.9815
+BEL,Belgium,1961,0
+BEL,Belgium,1962,0
+BEL,Belgium,1963,0
+BEL,Belgium,1964,0
+BEL,Belgium,1965,0
+BEL,Belgium,1966,0
+BEL,Belgium,1967,0
+BEL,Belgium,1968,0
+BEL,Belgium,1969,0
+BEL,Belgium,1970,0
+BEL,Belgium,1971,0
+BEL,Belgium,1972,0
+BEL,Belgium,1973,0
+BEL,Belgium,1974,0
+BEL,Belgium,1975,0
+BEL,Belgium,1976,0
+BEL,Belgium,1977,0
+BEL,Belgium,1978,0
+BEL,Belgium,1979,0
+BEL,Belgium,1980,0
+BEL,Belgium,1981,0
+BEL,Belgium,1982,0
+BEL,Belgium,1983,0
+BEL,Belgium,1984,0
+BEL,Belgium,1985,0
+BEL,Belgium,1986,0
+BEL,Belgium,1987,0
+BEL,Belgium,1988,0
+BEL,Belgium,1989,0
+BEL,Belgium,1990,0
+BEL,Belgium,1991,0
+BEL,Belgium,1992,0
+BEL,Belgium,1993,0
+BEL,Belgium,1994,0
+BEL,Belgium,1995,0
+BEL,Belgium,1996,0
+BEL,Belgium,1997,0
+BEL,Belgium,1998,0
+BEL,Belgium,1999,0
 BEL,Belgium,2000,1.581083333
 BEL,Belgium,2001,1.074666667
 BEL,Belgium,2002,1.565666667
@@ -623,6 +766,37 @@ BEL,Belgium,2016,1.468583333
 BEL,Belgium,2017,1.7495
 BEL,Belgium,2018,2.31
 BEL,Belgium,2019,2.071
+BIH,Bosnia and Herzegovina,1961,0
+BIH,Bosnia and Herzegovina,1962,0
+BIH,Bosnia and Herzegovina,1963,0
+BIH,Bosnia and Herzegovina,1964,0
+BIH,Bosnia and Herzegovina,1965,0
+BIH,Bosnia and Herzegovina,1966,0
+BIH,Bosnia and Herzegovina,1967,0
+BIH,Bosnia and Herzegovina,1968,0
+BIH,Bosnia and Herzegovina,1969,0
+BIH,Bosnia and Herzegovina,1970,0
+BIH,Bosnia and Herzegovina,1971,0
+BIH,Bosnia and Herzegovina,1972,0
+BIH,Bosnia and Herzegovina,1973,0
+BIH,Bosnia and Herzegovina,1974,0
+BIH,Bosnia and Herzegovina,1975,0
+BIH,Bosnia and Herzegovina,1976,0
+BIH,Bosnia and Herzegovina,1977,0
+BIH,Bosnia and Herzegovina,1978,0
+BIH,Bosnia and Herzegovina,1979,0
+BIH,Bosnia and Herzegovina,1980,0
+BIH,Bosnia and Herzegovina,1981,0
+BIH,Bosnia and Herzegovina,1982,0
+BIH,Bosnia and Herzegovina,1983,0
+BIH,Bosnia and Herzegovina,1984,0
+BIH,Bosnia and Herzegovina,1985,0
+BIH,Bosnia and Herzegovina,1986,0
+BIH,Bosnia and Herzegovina,1987,0
+BIH,Bosnia and Herzegovina,1988,0
+BIH,Bosnia and Herzegovina,1989,0
+BIH,Bosnia and Herzegovina,1990,0
+BIH,Bosnia and Herzegovina,1991,0
 BIH,Bosnia and Herzegovina,1992,0.885333333
 BIH,Bosnia and Herzegovina,1993,0.466333333
 BIH,Bosnia and Herzegovina,1994,1.63025
@@ -842,10 +1016,51 @@ BDI,Burundi,1971,-0.213666667
 BDI,Burundi,1972,0.381083333
 BDI,Burundi,1973,0.416
 BDI,Burundi,1974,-0.081666667
+BDI,Burundi,1975,0
+BDI,Burundi,1976,0
+BDI,Burundi,1977,0
+BDI,Burundi,1978,0
+BDI,Burundi,1979,0
+BDI,Burundi,1980,0
+BDI,Burundi,1981,0
+BDI,Burundi,1982,0
+BDI,Burundi,1983,0
+BDI,Burundi,1984,0
+BDI,Burundi,1985,0
+BDI,Burundi,1986,0
 BDI,Burundi,1987,0.272583333
+BDI,Burundi,1988,0
+BDI,Burundi,1989,0
+BDI,Burundi,1990,0
 BDI,Burundi,1991,-0.132666667
+BDI,Burundi,1992,0
+BDI,Burundi,1993,0
+BDI,Burundi,1994,0
+BDI,Burundi,1995,0
+BDI,Burundi,1996,0
+BDI,Burundi,1997,0
+BDI,Burundi,1998,0
+BDI,Burundi,1999,0
+BDI,Burundi,2000,0
+BDI,Burundi,2001,0
+BDI,Burundi,2002,0
 BDI,Burundi,2003,0.467416667
 BDI,Burundi,2004,0.648083333
+BDI,Burundi,2005,0
+BDI,Burundi,2006,0
+BDI,Burundi,2007,0
+BDI,Burundi,2008,0
+BDI,Burundi,2009,0
+BDI,Burundi,2010,0
+BDI,Burundi,2011,0
+BDI,Burundi,2012,0
+BDI,Burundi,2013,0
+BDI,Burundi,2014,0
+BDI,Burundi,2015,0
+BDI,Burundi,2016,0
+BDI,Burundi,2017,0
+BDI,Burundi,2018,0
+BDI,Burundi,2019,0
 CAM,Cambodia,1961,0.009
 CAM,Cambodia,1962,-0.235416667
 CAM,Cambodia,1963,-0.259416667
@@ -1236,6 +1451,8 @@ COK,Cook Islands,1993,0.3765
 COK,Cook Islands,1994,0.283916667
 COK,Cook Islands,1995,0.617833333
 COK,Cook Islands,1996,0.433583333
+COK,Cook Islands,1997,0
+COK,Cook Islands,1998,0
 COK,Cook Islands,1999,0.853166667
 COK,Cook Islands,2000,0.60975
 COK,Cook Islands,2001,0.782333333
@@ -1251,8 +1468,21 @@ COK,Cook Islands,2010,0.93725
 COK,Cook Islands,2011,0.832916667
 COK,Cook Islands,2012,0.46675
 COK,Cook Islands,2013,0.755
+COK,Cook Islands,2014,0
+COK,Cook Islands,2015,0
+COK,Cook Islands,2016,0
 COK,Cook Islands,2017,0.858166667
+COK,Cook Islands,2018,0
 COK,Cook Islands,2019,0.399
+CRC,Costa Rica,1961,0
+CRC,Costa Rica,1962,0
+CRC,Costa Rica,1963,0
+CRC,Costa Rica,1964,0
+CRC,Costa Rica,1965,0
+CRC,Costa Rica,1966,0
+CRC,Costa Rica,1967,0
+CRC,Costa Rica,1968,0
+CRC,Costa Rica,1969,0
 CRC,Costa Rica,1970,-0.482666667
 CRC,Costa Rica,1971,-0.509583333
 CRC,Costa Rica,1972,0.170333333
@@ -1265,6 +1495,7 @@ CRC,Costa Rica,1978,0.002833333
 CRC,Costa Rica,1979,0.049166667
 CRC,Costa Rica,1980,0.4225
 CRC,Costa Rica,1981,0.128416667
+CRC,Costa Rica,1982,0
 CRC,Costa Rica,1983,0.811166667
 CRC,Costa Rica,1984,-0.076
 CRC,Costa Rica,1985,-0.187333333
@@ -1274,6 +1505,10 @@ CRC,Costa Rica,1988,-0.011583333
 CRC,Costa Rica,1989,0.04025
 CRC,Costa Rica,1990,0.473833333
 CRC,Costa Rica,1991,0.508
+CRC,Costa Rica,1992,0
+CRC,Costa Rica,1993,0
+CRC,Costa Rica,1994,0
+CRC,Costa Rica,1995,0
 CRC,Costa Rica,1996,-0.152416667
 CRC,Costa Rica,1997,0.69475
 CRC,Costa Rica,1998,0.8285
@@ -1282,6 +1517,7 @@ CRC,Costa Rica,2000,0.009
 CRC,Costa Rica,2001,0.650166667
 CRC,Costa Rica,2002,0.664
 CRC,Costa Rica,2003,0.805083333
+CRC,Costa Rica,2004,0
 CRC,Costa Rica,2005,0.538916667
 CRC,Costa Rica,2006,0.613916667
 CRC,Costa Rica,2007,0.622833333
@@ -1292,8 +1528,42 @@ CRC,Costa Rica,2011,0.523083333
 CRC,Costa Rica,2012,0.416416667
 CRC,Costa Rica,2013,0.709916667
 CRC,Costa Rica,2014,0.673583333
+CRC,Costa Rica,2015,0
 CRC,Costa Rica,2016,0.967416667
 CRC,Costa Rica,2017,0.812
+CRC,Costa Rica,2018,0
+CRC,Costa Rica,2019,0
+CRO,Croatia,1961,0
+CRO,Croatia,1962,0
+CRO,Croatia,1963,0
+CRO,Croatia,1964,0
+CRO,Croatia,1965,0
+CRO,Croatia,1966,0
+CRO,Croatia,1967,0
+CRO,Croatia,1968,0
+CRO,Croatia,1969,0
+CRO,Croatia,1970,0
+CRO,Croatia,1971,0
+CRO,Croatia,1972,0
+CRO,Croatia,1973,0
+CRO,Croatia,1974,0
+CRO,Croatia,1975,0
+CRO,Croatia,1976,0
+CRO,Croatia,1977,0
+CRO,Croatia,1978,0
+CRO,Croatia,1979,0
+CRO,Croatia,1980,0
+CRO,Croatia,1981,0
+CRO,Croatia,1982,0
+CRO,Croatia,1983,0
+CRO,Croatia,1984,0
+CRO,Croatia,1985,0
+CRO,Croatia,1986,0
+CRO,Croatia,1987,0
+CRO,Croatia,1988,0
+CRO,Croatia,1989,0
+CRO,Croatia,1990,0
+CRO,Croatia,1991,0
 CRO,Croatia,1992,1.018916667
 CRO,Croatia,1993,0.547416667
 CRO,Croatia,1994,1.674666667
@@ -1440,38 +1710,65 @@ CYP,Cyprus,2016,1.4195
 CYP,Cyprus,2017,1.16075
 CYP,Cyprus,2018,2.134833333
 CYP,Cyprus,2019,1.542083333
-TCH,Czechoslovakia,1961,0.76825
-TCH,Czechoslovakia,1962,-0.733166667
-TCH,Czechoslovakia,1963,-0.73325
-TCH,Czechoslovakia,1964,-0.357416667
-TCH,Czechoslovakia,1965,-0.876916667
-TCH,Czechoslovakia,1966,0.647666667
-TCH,Czechoslovakia,1967,0.684416667
-TCH,Czechoslovakia,1968,0.202833333
-TCH,Czechoslovakia,1969,-0.350166667
-TCH,Czechoslovakia,1970,-0.360583333
-TCH,Czechoslovakia,1971,0.193583333
-TCH,Czechoslovakia,1972,0.159333333
-TCH,Czechoslovakia,1973,0.013583333
-TCH,Czechoslovakia,1974,0.692583333
-TCH,Czechoslovakia,1975,0.843416667
-TCH,Czechoslovakia,1976,-0.065416667
-TCH,Czechoslovakia,1977,0.498666667
-TCH,Czechoslovakia,1978,-0.51225
-TCH,Czechoslovakia,1979,0.102583333
-TCH,Czechoslovakia,1980,-0.894583333
-TCH,Czechoslovakia,1981,0.192416667
-TCH,Czechoslovakia,1982,0.613916667
-TCH,Czechoslovakia,1983,0.959083333
-TCH,Czechoslovakia,1984,-0.09825
-TCH,Czechoslovakia,1985,-0.724416667
-TCH,Czechoslovakia,1986,-0.029
-TCH,Czechoslovakia,1987,-0.527416667
-TCH,Czechoslovakia,1988,0.578583333
-TCH,Czechoslovakia,1989,1.175833333
-TCH,Czechoslovakia,1990,1.13075
-TCH,Czechoslovakia,1991,-0.007666667
-TCH,Czechoslovakia,1992,1.182333333
+TCH,Czech Republic,1961,0.76825
+TCH,Czech Republic,1962,-0.733166667
+TCH,Czech Republic,1963,-0.73325
+TCH,Czech Republic,1964,-0.357416667
+TCH,Czech Republic,1965,-0.876916667
+TCH,Czech Republic,1966,0.647666667
+TCH,Czech Republic,1967,0.684416667
+TCH,Czech Republic,1968,0.202833333
+TCH,Czech Republic,1969,-0.350166667
+TCH,Czech Republic,1970,-0.360583333
+TCH,Czech Republic,1971,0.193583333
+TCH,Czech Republic,1972,0.159333333
+TCH,Czech Republic,1973,0.013583333
+TCH,Czech Republic,1974,0.692583333
+TCH,Czech Republic,1975,0.843416667
+TCH,Czech Republic,1976,-0.065416667
+TCH,Czech Republic,1977,0.498666667
+TCH,Czech Republic,1978,-0.51225
+TCH,Czech Republic,1979,0.102583333
+TCH,Czech Republic,1980,-0.894583333
+TCH,Czech Republic,1981,0.192416667
+TCH,Czech Republic,1982,0.613916667
+TCH,Czech Republic,1983,0.959083333
+TCH,Czech Republic,1984,-0.09825
+TCH,Czech Republic,1985,-0.724416667
+TCH,Czech Republic,1986,-0.029
+TCH,Czech Republic,1987,-0.527416667
+TCH,Czech Republic,1988,0.578583333
+TCH,Czech Republic,1989,1.175833333
+TCH,Czech Republic,1990,1.13075
+TCH,Czech Republic,1991,-0.007666667
+TCH,Czech Republic,1992,1.182333333
+TCH,Czech Republic,1993,0
+TCH,Czech Republic,1994,0
+TCH,Czech Republic,1995,0
+TCH,Czech Republic,1996,0
+TCH,Czech Republic,1997,0
+TCH,Czech Republic,1998,0
+TCH,Czech Republic,1999,0
+TCH,Czech Republic,2000,0
+TCH,Czech Republic,2001,0
+TCH,Czech Republic,2002,0
+TCH,Czech Republic,2003,0
+TCH,Czech Republic,2004,0
+TCH,Czech Republic,2005,0
+TCH,Czech Republic,2006,0
+TCH,Czech Republic,2007,0
+TCH,Czech Republic,2008,0
+TCH,Czech Republic,2009,0
+TCH,Czech Republic,2010,0
+TCH,Czech Republic,2011,0
+TCH,Czech Republic,2012,0
+TCH,Czech Republic,2013,0
+TCH,Czech Republic,2014,0
+TCH,Czech Republic,2015,0
+TCH,Czech Republic,2016,0
+TCH,Czech Republic,2017,0
+TCH,Czech Republic,2018,0
+TCH,Czech Republic,2019,0
 DEN,Denmark,1961,0.877083333
 DEN,Denmark,1962,-0.728166667
 DEN,Denmark,1963,-0.995083333
@@ -1561,19 +1858,35 @@ DJI,Djibouti,1987,0.362
 DJI,Djibouti,1988,0.570333333
 DJI,Djibouti,1989,0.054666667
 DJI,Djibouti,1990,0.550083333
+DJI,Djibouti,1991,0
+DJI,Djibouti,1992,0
+DJI,Djibouti,1993,0
 DJI,Djibouti,1994,0.389
 DJI,Djibouti,1995,0.794833333
 DJI,Djibouti,1996,0.726916667
 DJI,Djibouti,1997,0.7035
+DJI,Djibouti,1998,0
 DJI,Djibouti,1999,0.48175
+DJI,Djibouti,2000,0
+DJI,Djibouti,2001,0
+DJI,Djibouti,2002,0
 DJI,Djibouti,2003,1.112083333
+DJI,Djibouti,2004,0
 DJI,Djibouti,2005,1.191583333
 DJI,Djibouti,2006,1.041083333
 DJI,Djibouti,2007,0.864166667
 DJI,Djibouti,2008,0.401666667
 DJI,Djibouti,2009,1.718
+DJI,Djibouti,2010,0
+DJI,Djibouti,2011,0
+DJI,Djibouti,2012,0
+DJI,Djibouti,2013,0
+DJI,Djibouti,2014,0
+DJI,Djibouti,2015,0
 DJI,Djibouti,2016,1.492416667
 DJI,Djibouti,2017,1.596416667
+DJI,Djibouti,2018,0
+DJI,Djibouti,2019,0
 DOM,Dominican Republic,1961,-0.032166667
 DOM,Dominican Republic,1962,-0.042
 DOM,Dominican Republic,1963,-0.00675
@@ -1751,11 +2064,48 @@ EGY,Egypt,2016,1.196416667
 EGY,Egypt,2017,0.779666667
 EGY,Egypt,2018,1.823333333
 EGY,Egypt,2019,0.994333333
+ERI,Eritrea,1961,0
+ERI,Eritrea,1962,0
+ERI,Eritrea,1963,0
+ERI,Eritrea,1964,0
+ERI,Eritrea,1965,0
+ERI,Eritrea,1966,0
+ERI,Eritrea,1967,0
+ERI,Eritrea,1968,0
+ERI,Eritrea,1969,0
+ERI,Eritrea,1970,0
+ERI,Eritrea,1971,0
+ERI,Eritrea,1972,0
+ERI,Eritrea,1973,0
+ERI,Eritrea,1974,0
+ERI,Eritrea,1975,0
+ERI,Eritrea,1976,0
+ERI,Eritrea,1977,0
+ERI,Eritrea,1978,0
+ERI,Eritrea,1979,0
+ERI,Eritrea,1980,0
+ERI,Eritrea,1981,0
+ERI,Eritrea,1982,0
+ERI,Eritrea,1983,0
+ERI,Eritrea,1984,0
+ERI,Eritrea,1985,0
+ERI,Eritrea,1986,0
+ERI,Eritrea,1987,0
+ERI,Eritrea,1988,0
+ERI,Eritrea,1989,0
+ERI,Eritrea,1990,0
+ERI,Eritrea,1991,0
+ERI,Eritrea,1992,0
+ERI,Eritrea,1993,0
+ERI,Eritrea,1994,0
+ERI,Eritrea,1995,0
+ERI,Eritrea,1996,0
 ERI,Eritrea,1997,0.40675
 ERI,Eritrea,1998,0.6385
 ERI,Eritrea,1999,0.8775
 ERI,Eritrea,2000,0.619
 ERI,Eritrea,2001,0.767083333
+ERI,Eritrea,2002,0
 ERI,Eritrea,2003,0.97975
 ERI,Eritrea,2004,1.111916667
 ERI,Eritrea,2005,1.087083333
@@ -1767,10 +2117,43 @@ ERI,Eritrea,2010,1.799916667
 ERI,Eritrea,2011,1.67975
 ERI,Eritrea,2012,1.481166667
 ERI,Eritrea,2013,1.264916667
+ERI,Eritrea,2014,0
 ERI,Eritrea,2015,1.800166667
+ERI,Eritrea,2016,0
 ERI,Eritrea,2017,1.57025
 ERI,Eritrea,2018,1.04475
 ERI,Eritrea,2019,0.930333333
+EST,Estonia,1961,0
+EST,Estonia,1962,0
+EST,Estonia,1963,0
+EST,Estonia,1964,0
+EST,Estonia,1965,0
+EST,Estonia,1966,0
+EST,Estonia,1967,0
+EST,Estonia,1968,0
+EST,Estonia,1969,0
+EST,Estonia,1970,0
+EST,Estonia,1971,0
+EST,Estonia,1972,0
+EST,Estonia,1973,0
+EST,Estonia,1974,0
+EST,Estonia,1975,0
+EST,Estonia,1976,0
+EST,Estonia,1977,0
+EST,Estonia,1978,0
+EST,Estonia,1979,0
+EST,Estonia,1980,0
+EST,Estonia,1981,0
+EST,Estonia,1982,0
+EST,Estonia,1983,0
+EST,Estonia,1984,0
+EST,Estonia,1985,0
+EST,Estonia,1986,0
+EST,Estonia,1987,0
+EST,Estonia,1988,0
+EST,Estonia,1989,0
+EST,Estonia,1990,0
+EST,Estonia,1991,0
 EST,Estonia,1992,1.655
 EST,Estonia,1993,0.39425
 EST,Estonia,1994,0.45825
@@ -1799,6 +2182,38 @@ EST,Estonia,2016,1.713416667
 EST,Estonia,2017,1.596
 EST,Estonia,2018,2.2285
 EST,Estonia,2019,2.5295
+ETH,Ethiopia,1961,0
+ETH,Ethiopia,1962,0
+ETH,Ethiopia,1963,0
+ETH,Ethiopia,1964,0
+ETH,Ethiopia,1965,0
+ETH,Ethiopia,1966,0
+ETH,Ethiopia,1967,0
+ETH,Ethiopia,1968,0
+ETH,Ethiopia,1969,0
+ETH,Ethiopia,1970,0
+ETH,Ethiopia,1971,0
+ETH,Ethiopia,1972,0
+ETH,Ethiopia,1973,0
+ETH,Ethiopia,1974,0
+ETH,Ethiopia,1975,0
+ETH,Ethiopia,1976,0
+ETH,Ethiopia,1977,0
+ETH,Ethiopia,1978,0
+ETH,Ethiopia,1979,0
+ETH,Ethiopia,1980,0
+ETH,Ethiopia,1981,0
+ETH,Ethiopia,1982,0
+ETH,Ethiopia,1983,0
+ETH,Ethiopia,1984,0
+ETH,Ethiopia,1985,0
+ETH,Ethiopia,1986,0
+ETH,Ethiopia,1987,0
+ETH,Ethiopia,1988,0
+ETH,Ethiopia,1989,0
+ETH,Ethiopia,1990,0
+ETH,Ethiopia,1991,0
+ETH,Ethiopia,1992,0
 ETH,Ethiopia,1993,0.236916667
 ETH,Ethiopia,1994,0.59175
 ETH,Ethiopia,1995,0.906916667
@@ -1973,11 +2388,14 @@ GAB,Gabon,1986,-0.1555
 GAB,Gabon,1987,0.299916667
 GAB,Gabon,1988,0.14725
 GAB,Gabon,1989,-0.0185
+GAB,Gabon,1990,0
+GAB,Gabon,1991,0
 GAB,Gabon,1992,-0.2625
 GAB,Gabon,1993,0.181666667
 GAB,Gabon,1994,0.199333333
 GAB,Gabon,1995,0.547833333
 GAB,Gabon,1996,0.125083333
+GAB,Gabon,1997,0
 GAB,Gabon,1998,0.99825
 GAB,Gabon,1999,0.467083333
 GAB,Gabon,2000,0.227083333
@@ -2000,6 +2418,37 @@ GAB,Gabon,2016,1.3605
 GAB,Gabon,2017,1.237416667
 GAB,Gabon,2018,0.970416667
 GAB,Gabon,2019,1.630416667
+GEO,Georgia,1961,0
+GEO,Georgia,1962,0
+GEO,Georgia,1963,0
+GEO,Georgia,1964,0
+GEO,Georgia,1965,0
+GEO,Georgia,1966,0
+GEO,Georgia,1967,0
+GEO,Georgia,1968,0
+GEO,Georgia,1969,0
+GEO,Georgia,1970,0
+GEO,Georgia,1971,0
+GEO,Georgia,1972,0
+GEO,Georgia,1973,0
+GEO,Georgia,1974,0
+GEO,Georgia,1975,0
+GEO,Georgia,1976,0
+GEO,Georgia,1977,0
+GEO,Georgia,1978,0
+GEO,Georgia,1979,0
+GEO,Georgia,1980,0
+GEO,Georgia,1981,0
+GEO,Georgia,1982,0
+GEO,Georgia,1983,0
+GEO,Georgia,1984,0
+GEO,Georgia,1985,0
+GEO,Georgia,1986,0
+GEO,Georgia,1987,0
+GEO,Georgia,1988,0
+GEO,Georgia,1989,0
+GEO,Georgia,1990,0
+GEO,Georgia,1991,0
 GEO,Georgia,1992,-1.199666667
 GEO,Georgia,1993,-0.994416667
 GEO,Georgia,1994,0.232416667
@@ -2413,6 +2862,7 @@ GUY,Guyana,1988,0.429083333
 GUY,Guyana,1989,0.0915
 GUY,Guyana,1990,0.701583333
 GUY,Guyana,1991,0.051416667
+GUY,Guyana,1992,0
 GUY,Guyana,1993,0.4475
 GUY,Guyana,1994,0.421083333
 GUY,Guyana,1995,0.969416667
@@ -3045,6 +3495,10 @@ JAM,Jamaica,1972,-0.030916667
 JAM,Jamaica,1973,0.21575
 JAM,Jamaica,1974,0.198916667
 JAM,Jamaica,1975,0.176916667
+JAM,Jamaica,1976,0
+JAM,Jamaica,1977,0
+JAM,Jamaica,1978,0
+JAM,Jamaica,1979,0
 JAM,Jamaica,1980,0.644333333
 JAM,Jamaica,1981,1.00375
 JAM,Jamaica,1982,0.213333333
@@ -3144,6 +3598,37 @@ JPN,Japan,2016,1.25
 JPN,Japan,2017,0.585583333
 JPN,Japan,2018,1.057583333
 JPN,Japan,2019,1.255833333
+KAZ,Kazakhstan,1961,0
+KAZ,Kazakhstan,1962,0
+KAZ,Kazakhstan,1963,0
+KAZ,Kazakhstan,1964,0
+KAZ,Kazakhstan,1965,0
+KAZ,Kazakhstan,1966,0
+KAZ,Kazakhstan,1967,0
+KAZ,Kazakhstan,1968,0
+KAZ,Kazakhstan,1969,0
+KAZ,Kazakhstan,1970,0
+KAZ,Kazakhstan,1971,0
+KAZ,Kazakhstan,1972,0
+KAZ,Kazakhstan,1973,0
+KAZ,Kazakhstan,1974,0
+KAZ,Kazakhstan,1975,0
+KAZ,Kazakhstan,1976,0
+KAZ,Kazakhstan,1977,0
+KAZ,Kazakhstan,1978,0
+KAZ,Kazakhstan,1979,0
+KAZ,Kazakhstan,1980,0
+KAZ,Kazakhstan,1981,0
+KAZ,Kazakhstan,1982,0
+KAZ,Kazakhstan,1983,0
+KAZ,Kazakhstan,1984,0
+KAZ,Kazakhstan,1985,0
+KAZ,Kazakhstan,1986,0
+KAZ,Kazakhstan,1987,0
+KAZ,Kazakhstan,1988,0
+KAZ,Kazakhstan,1989,0
+KAZ,Kazakhstan,1990,0
+KAZ,Kazakhstan,1991,0
 KAZ,Kazakhstan,1992,0.386833333
 KAZ,Kazakhstan,1993,-0.6935
 KAZ,Kazakhstan,1994,0.177
@@ -3290,6 +3775,37 @@ KUW,Kuwait,2016,1.858666667
 KUW,Kuwait,2017,2.248916667
 KUW,Kuwait,2018,2.588833333
 KUW,Kuwait,2019,2.021916667
+KGZ,Kyrgyzstan,1961,0
+KGZ,Kyrgyzstan,1962,0
+KGZ,Kyrgyzstan,1963,0
+KGZ,Kyrgyzstan,1964,0
+KGZ,Kyrgyzstan,1965,0
+KGZ,Kyrgyzstan,1966,0
+KGZ,Kyrgyzstan,1967,0
+KGZ,Kyrgyzstan,1968,0
+KGZ,Kyrgyzstan,1969,0
+KGZ,Kyrgyzstan,1970,0
+KGZ,Kyrgyzstan,1971,0
+KGZ,Kyrgyzstan,1972,0
+KGZ,Kyrgyzstan,1973,0
+KGZ,Kyrgyzstan,1974,0
+KGZ,Kyrgyzstan,1975,0
+KGZ,Kyrgyzstan,1976,0
+KGZ,Kyrgyzstan,1977,0
+KGZ,Kyrgyzstan,1978,0
+KGZ,Kyrgyzstan,1979,0
+KGZ,Kyrgyzstan,1980,0
+KGZ,Kyrgyzstan,1981,0
+KGZ,Kyrgyzstan,1982,0
+KGZ,Kyrgyzstan,1983,0
+KGZ,Kyrgyzstan,1984,0
+KGZ,Kyrgyzstan,1985,0
+KGZ,Kyrgyzstan,1986,0
+KGZ,Kyrgyzstan,1987,0
+KGZ,Kyrgyzstan,1988,0
+KGZ,Kyrgyzstan,1989,0
+KGZ,Kyrgyzstan,1990,0
+KGZ,Kyrgyzstan,1991,0
 KGZ,Kyrgyzstan,1992,0.165666667
 KGZ,Kyrgyzstan,1993,-0.293666667
 KGZ,Kyrgyzstan,1994,0.306083333
@@ -3318,6 +3834,37 @@ KGZ,Kyrgyzstan,2016,2.005833333
 KGZ,Kyrgyzstan,2017,1.390916667
 KGZ,Kyrgyzstan,2018,1.301416667
 KGZ,Kyrgyzstan,2019,1.782416667
+LAT,Latvia,1961,0
+LAT,Latvia,1962,0
+LAT,Latvia,1963,0
+LAT,Latvia,1964,0
+LAT,Latvia,1965,0
+LAT,Latvia,1966,0
+LAT,Latvia,1967,0
+LAT,Latvia,1968,0
+LAT,Latvia,1969,0
+LAT,Latvia,1970,0
+LAT,Latvia,1971,0
+LAT,Latvia,1972,0
+LAT,Latvia,1973,0
+LAT,Latvia,1974,0
+LAT,Latvia,1975,0
+LAT,Latvia,1976,0
+LAT,Latvia,1977,0
+LAT,Latvia,1978,0
+LAT,Latvia,1979,0
+LAT,Latvia,1980,0
+LAT,Latvia,1981,0
+LAT,Latvia,1982,0
+LAT,Latvia,1983,0
+LAT,Latvia,1984,0
+LAT,Latvia,1985,0
+LAT,Latvia,1986,0
+LAT,Latvia,1987,0
+LAT,Latvia,1988,0
+LAT,Latvia,1989,0
+LAT,Latvia,1990,0
+LAT,Latvia,1991,0
 LAT,Latvia,1992,1.596166667
 LAT,Latvia,1993,0.33725
 LAT,Latvia,1994,0.65075
@@ -3405,6 +3952,37 @@ LIB,Lebanon,2016,1.611333333
 LIB,Lebanon,2017,1.34875
 LIB,Lebanon,2018,2.08375
 LIB,Lebanon,2019,1.314166667
+LTU,Lithuania,1961,0
+LTU,Lithuania,1962,0
+LTU,Lithuania,1963,0
+LTU,Lithuania,1964,0
+LTU,Lithuania,1965,0
+LTU,Lithuania,1966,0
+LTU,Lithuania,1967,0
+LTU,Lithuania,1968,0
+LTU,Lithuania,1969,0
+LTU,Lithuania,1970,0
+LTU,Lithuania,1971,0
+LTU,Lithuania,1972,0
+LTU,Lithuania,1973,0
+LTU,Lithuania,1974,0
+LTU,Lithuania,1975,0
+LTU,Lithuania,1976,0
+LTU,Lithuania,1977,0
+LTU,Lithuania,1978,0
+LTU,Lithuania,1979,0
+LTU,Lithuania,1980,0
+LTU,Lithuania,1981,0
+LTU,Lithuania,1982,0
+LTU,Lithuania,1983,0
+LTU,Lithuania,1984,0
+LTU,Lithuania,1985,0
+LTU,Lithuania,1986,0
+LTU,Lithuania,1987,0
+LTU,Lithuania,1988,0
+LTU,Lithuania,1989,0
+LTU,Lithuania,1990,0
+LTU,Lithuania,1991,0
 LTU,Lithuania,1992,1.5115
 LTU,Lithuania,1993,0.31175
 LTU,Lithuania,1994,0.850166667
@@ -3433,6 +4011,45 @@ LTU,Lithuania,2016,1.7615
 LTU,Lithuania,2017,1.6295
 LTU,Lithuania,2018,2.262333333
 LTU,Lithuania,2019,2.913
+LUX,Luxembourg,1961,0
+LUX,Luxembourg,1962,0
+LUX,Luxembourg,1963,0
+LUX,Luxembourg,1964,0
+LUX,Luxembourg,1965,0
+LUX,Luxembourg,1966,0
+LUX,Luxembourg,1967,0
+LUX,Luxembourg,1968,0
+LUX,Luxembourg,1969,0
+LUX,Luxembourg,1970,0
+LUX,Luxembourg,1971,0
+LUX,Luxembourg,1972,0
+LUX,Luxembourg,1973,0
+LUX,Luxembourg,1974,0
+LUX,Luxembourg,1975,0
+LUX,Luxembourg,1976,0
+LUX,Luxembourg,1977,0
+LUX,Luxembourg,1978,0
+LUX,Luxembourg,1979,0
+LUX,Luxembourg,1980,0
+LUX,Luxembourg,1981,0
+LUX,Luxembourg,1982,0
+LUX,Luxembourg,1983,0
+LUX,Luxembourg,1984,0
+LUX,Luxembourg,1985,0
+LUX,Luxembourg,1986,0
+LUX,Luxembourg,1987,0
+LUX,Luxembourg,1988,0
+LUX,Luxembourg,1989,0
+LUX,Luxembourg,1990,0
+LUX,Luxembourg,1991,0
+LUX,Luxembourg,1992,0
+LUX,Luxembourg,1993,0
+LUX,Luxembourg,1994,0
+LUX,Luxembourg,1995,0
+LUX,Luxembourg,1996,0
+LUX,Luxembourg,1997,0
+LUX,Luxembourg,1998,0
+LUX,Luxembourg,1999,0
 LUX,Luxembourg,2000,1.776916667
 LUX,Luxembourg,2001,1.1255
 LUX,Luxembourg,2002,1.59175
@@ -3689,6 +4306,37 @@ FSM,Micronesia,2016,1.11375
 FSM,Micronesia,2017,0.999583333
 FSM,Micronesia,2018,0.899666667
 FSM,Micronesia,2019,0.84225
+MDA,Moldova,1961,0
+MDA,Moldova,1962,0
+MDA,Moldova,1963,0
+MDA,Moldova,1964,0
+MDA,Moldova,1965,0
+MDA,Moldova,1966,0
+MDA,Moldova,1967,0
+MDA,Moldova,1968,0
+MDA,Moldova,1969,0
+MDA,Moldova,1970,0
+MDA,Moldova,1971,0
+MDA,Moldova,1972,0
+MDA,Moldova,1973,0
+MDA,Moldova,1974,0
+MDA,Moldova,1975,0
+MDA,Moldova,1976,0
+MDA,Moldova,1977,0
+MDA,Moldova,1978,0
+MDA,Moldova,1979,0
+MDA,Moldova,1980,0
+MDA,Moldova,1981,0
+MDA,Moldova,1982,0
+MDA,Moldova,1983,0
+MDA,Moldova,1984,0
+MDA,Moldova,1985,0
+MDA,Moldova,1986,0
+MDA,Moldova,1987,0
+MDA,Moldova,1988,0
+MDA,Moldova,1989,0
+MDA,Moldova,1990,0
+MDA,Moldova,1991,0
 MDA,Moldova,1992,0.43525
 MDA,Moldova,1993,-0.397666667
 MDA,Moldova,1994,1.370333333
@@ -3776,6 +4424,51 @@ MGL,Mongolia,2016,1.51475
 MGL,Mongolia,2017,2.559333333
 MGL,Mongolia,2018,1.949083333
 MGL,Mongolia,2019,2.15575
+MNE,Montenegro,1961,0
+MNE,Montenegro,1962,0
+MNE,Montenegro,1963,0
+MNE,Montenegro,1964,0
+MNE,Montenegro,1965,0
+MNE,Montenegro,1966,0
+MNE,Montenegro,1967,0
+MNE,Montenegro,1968,0
+MNE,Montenegro,1969,0
+MNE,Montenegro,1970,0
+MNE,Montenegro,1971,0
+MNE,Montenegro,1972,0
+MNE,Montenegro,1973,0
+MNE,Montenegro,1974,0
+MNE,Montenegro,1975,0
+MNE,Montenegro,1976,0
+MNE,Montenegro,1977,0
+MNE,Montenegro,1978,0
+MNE,Montenegro,1979,0
+MNE,Montenegro,1980,0
+MNE,Montenegro,1981,0
+MNE,Montenegro,1982,0
+MNE,Montenegro,1983,0
+MNE,Montenegro,1984,0
+MNE,Montenegro,1985,0
+MNE,Montenegro,1986,0
+MNE,Montenegro,1987,0
+MNE,Montenegro,1988,0
+MNE,Montenegro,1989,0
+MNE,Montenegro,1990,0
+MNE,Montenegro,1991,0
+MNE,Montenegro,1992,0
+MNE,Montenegro,1993,0
+MNE,Montenegro,1994,0
+MNE,Montenegro,1995,0
+MNE,Montenegro,1996,0
+MNE,Montenegro,1997,0
+MNE,Montenegro,1998,0
+MNE,Montenegro,1999,0
+MNE,Montenegro,2000,0
+MNE,Montenegro,2001,0
+MNE,Montenegro,2002,0
+MNE,Montenegro,2003,0
+MNE,Montenegro,2004,0
+MNE,Montenegro,2005,0
 MNE,Montenegro,2006,0.569416667
 MNE,Montenegro,2007,1.558416667
 MNE,Montenegro,2008,1.550916667
@@ -4380,6 +5073,10 @@ PAK,Pakistan,2016,1.357583333
 PAK,Pakistan,2017,0.924166667
 PAK,Pakistan,2018,1.297416667
 PAK,Pakistan,2019,0.40475
+PAN,Panama,1961,0
+PAN,Panama,1962,0
+PAN,Panama,1963,0
+PAN,Panama,1964,0
 PAN,Panama,1965,-0.092333333
 PAN,Panama,1966,0.14
 PAN,Panama,1967,-0.211166667
@@ -4433,6 +5130,7 @@ PAN,Panama,2014,0.845166667
 PAN,Panama,2015,1.178916667
 PAN,Panama,2016,0.978416667
 PAN,Panama,2017,0.876416667
+PAN,Panama,2018,0
 PAN,Panama,2019,1.476
 PAR,Paraguay,1961,0.559916667
 PAR,Paraguay,1962,-0.577166667
@@ -4906,6 +5604,37 @@ ROU,Romania,2016,1.4975
 ROU,Romania,2017,1.456166667
 ROU,Romania,2018,2.04975
 ROU,Romania,2019,2.49575
+RUS,Russian Federation,1961,0
+RUS,Russian Federation,1962,0
+RUS,Russian Federation,1963,0
+RUS,Russian Federation,1964,0
+RUS,Russian Federation,1965,0
+RUS,Russian Federation,1966,0
+RUS,Russian Federation,1967,0
+RUS,Russian Federation,1968,0
+RUS,Russian Federation,1969,0
+RUS,Russian Federation,1970,0
+RUS,Russian Federation,1971,0
+RUS,Russian Federation,1972,0
+RUS,Russian Federation,1973,0
+RUS,Russian Federation,1974,0
+RUS,Russian Federation,1975,0
+RUS,Russian Federation,1976,0
+RUS,Russian Federation,1977,0
+RUS,Russian Federation,1978,0
+RUS,Russian Federation,1979,0
+RUS,Russian Federation,1980,0
+RUS,Russian Federation,1981,0
+RUS,Russian Federation,1982,0
+RUS,Russian Federation,1983,0
+RUS,Russian Federation,1984,0
+RUS,Russian Federation,1985,0
+RUS,Russian Federation,1986,0
+RUS,Russian Federation,1987,0
+RUS,Russian Federation,1988,0
+RUS,Russian Federation,1989,0
+RUS,Russian Federation,1990,0
+RUS,Russian Federation,1991,0
 RUS,Russian Federation,1992,0.531083333
 RUS,Russian Federation,1993,0.7715
 RUS,Russian Federation,1994,0.553166667
@@ -5052,6 +5781,51 @@ SEN,Senegal,2016,1.71175
 SEN,Senegal,2017,1.678083333
 SEN,Senegal,2018,1.161166667
 SEN,Senegal,2019,1.5145
+SRB,Serbia,1961,0
+SRB,Serbia,1962,0
+SRB,Serbia,1963,0
+SRB,Serbia,1964,0
+SRB,Serbia,1965,0
+SRB,Serbia,1966,0
+SRB,Serbia,1967,0
+SRB,Serbia,1968,0
+SRB,Serbia,1969,0
+SRB,Serbia,1970,0
+SRB,Serbia,1971,0
+SRB,Serbia,1972,0
+SRB,Serbia,1973,0
+SRB,Serbia,1974,0
+SRB,Serbia,1975,0
+SRB,Serbia,1976,0
+SRB,Serbia,1977,0
+SRB,Serbia,1978,0
+SRB,Serbia,1979,0
+SRB,Serbia,1980,0
+SRB,Serbia,1981,0
+SRB,Serbia,1982,0
+SRB,Serbia,1983,0
+SRB,Serbia,1984,0
+SRB,Serbia,1985,0
+SRB,Serbia,1986,0
+SRB,Serbia,1987,0
+SRB,Serbia,1988,0
+SRB,Serbia,1989,0
+SRB,Serbia,1990,0
+SRB,Serbia,1991,0
+SRB,Serbia,1992,0
+SRB,Serbia,1993,0
+SRB,Serbia,1994,0
+SRB,Serbia,1995,0
+SRB,Serbia,1996,0
+SRB,Serbia,1997,0
+SRB,Serbia,1998,0
+SRB,Serbia,1999,0
+SRB,Serbia,2000,0
+SRB,Serbia,2001,0
+SRB,Serbia,2002,0
+SRB,Serbia,2003,0
+SRB,Serbia,2004,0
+SRB,Serbia,2005,0
 SRB,Serbia,2006,0.61475
 SRB,Serbia,2007,1.6855
 SRB,Serbia,2008,1.607666667
@@ -5066,6 +5840,37 @@ SRB,Serbia,2016,1.488166667
 SRB,Serbia,2017,1.529
 SRB,Serbia,2018,2.1955
 SRB,Serbia,2019,2.325333333
+SCG,Serbia and Montenegro,1961,0
+SCG,Serbia and Montenegro,1962,0
+SCG,Serbia and Montenegro,1963,0
+SCG,Serbia and Montenegro,1964,0
+SCG,Serbia and Montenegro,1965,0
+SCG,Serbia and Montenegro,1966,0
+SCG,Serbia and Montenegro,1967,0
+SCG,Serbia and Montenegro,1968,0
+SCG,Serbia and Montenegro,1969,0
+SCG,Serbia and Montenegro,1970,0
+SCG,Serbia and Montenegro,1971,0
+SCG,Serbia and Montenegro,1972,0
+SCG,Serbia and Montenegro,1973,0
+SCG,Serbia and Montenegro,1974,0
+SCG,Serbia and Montenegro,1975,0
+SCG,Serbia and Montenegro,1976,0
+SCG,Serbia and Montenegro,1977,0
+SCG,Serbia and Montenegro,1978,0
+SCG,Serbia and Montenegro,1979,0
+SCG,Serbia and Montenegro,1980,0
+SCG,Serbia and Montenegro,1981,0
+SCG,Serbia and Montenegro,1982,0
+SCG,Serbia and Montenegro,1983,0
+SCG,Serbia and Montenegro,1984,0
+SCG,Serbia and Montenegro,1985,0
+SCG,Serbia and Montenegro,1986,0
+SCG,Serbia and Montenegro,1987,0
+SCG,Serbia and Montenegro,1988,0
+SCG,Serbia and Montenegro,1989,0
+SCG,Serbia and Montenegro,1990,0
+SCG,Serbia and Montenegro,1991,0
 SCG,Serbia and Montenegro,1992,0.669833333
 SCG,Serbia and Montenegro,1993,0.28775
 SCG,Serbia and Montenegro,1994,1.569083333
@@ -5080,6 +5885,20 @@ SCG,Serbia and Montenegro,2002,1.3735
 SCG,Serbia and Montenegro,2003,0.779416667
 SCG,Serbia and Montenegro,2004,0.632916667
 SCG,Serbia and Montenegro,2005,-0.111083333
+SCG,Serbia and Montenegro,2006,0
+SCG,Serbia and Montenegro,2007,0
+SCG,Serbia and Montenegro,2008,0
+SCG,Serbia and Montenegro,2009,0
+SCG,Serbia and Montenegro,2010,0
+SCG,Serbia and Montenegro,2011,0
+SCG,Serbia and Montenegro,2012,0
+SCG,Serbia and Montenegro,2013,0
+SCG,Serbia and Montenegro,2014,0
+SCG,Serbia and Montenegro,2015,0
+SCG,Serbia and Montenegro,2016,0
+SCG,Serbia and Montenegro,2017,0
+SCG,Serbia and Montenegro,2018,0
+SCG,Serbia and Montenegro,2019,0
 SIN,Singapore,1961,0.025083333
 SIN,Singapore,1962,-0.1655
 SIN,Singapore,1963,-0.041166667
@@ -5095,6 +5914,8 @@ SIN,Singapore,1972,0.226166667
 SIN,Singapore,1973,0.16125
 SIN,Singapore,1974,-0.089833333
 SIN,Singapore,1975,-0.0985
+SIN,Singapore,1976,0
+SIN,Singapore,1977,0
 SIN,Singapore,1978,0.32925
 SIN,Singapore,1979,0.419333333
 SIN,Singapore,1980,0.49275
@@ -5107,6 +5928,68 @@ SIN,Singapore,1986,0.3475
 SIN,Singapore,1987,0.468583333
 SIN,Singapore,1988,0.378083333
 SIN,Singapore,1989,0.128583333
+SIN,Singapore,1990,0
+SIN,Singapore,1991,0
+SIN,Singapore,1992,0
+SIN,Singapore,1993,0
+SIN,Singapore,1994,0
+SIN,Singapore,1995,0
+SIN,Singapore,1996,0
+SIN,Singapore,1997,0
+SIN,Singapore,1998,0
+SIN,Singapore,1999,0
+SIN,Singapore,2000,0
+SIN,Singapore,2001,0
+SIN,Singapore,2002,0
+SIN,Singapore,2003,0
+SIN,Singapore,2004,0
+SIN,Singapore,2005,0
+SIN,Singapore,2006,0
+SIN,Singapore,2007,0
+SIN,Singapore,2008,0
+SIN,Singapore,2009,0
+SIN,Singapore,2010,0
+SIN,Singapore,2011,0
+SIN,Singapore,2012,0
+SIN,Singapore,2013,0
+SIN,Singapore,2014,0
+SIN,Singapore,2015,0
+SIN,Singapore,2016,0
+SIN,Singapore,2017,0
+SIN,Singapore,2018,0
+SIN,Singapore,2019,0
+SVK,Slovakia,1961,0
+SVK,Slovakia,1962,0
+SVK,Slovakia,1963,0
+SVK,Slovakia,1964,0
+SVK,Slovakia,1965,0
+SVK,Slovakia,1966,0
+SVK,Slovakia,1967,0
+SVK,Slovakia,1968,0
+SVK,Slovakia,1969,0
+SVK,Slovakia,1970,0
+SVK,Slovakia,1971,0
+SVK,Slovakia,1972,0
+SVK,Slovakia,1973,0
+SVK,Slovakia,1974,0
+SVK,Slovakia,1975,0
+SVK,Slovakia,1976,0
+SVK,Slovakia,1977,0
+SVK,Slovakia,1978,0
+SVK,Slovakia,1979,0
+SVK,Slovakia,1980,0
+SVK,Slovakia,1981,0
+SVK,Slovakia,1982,0
+SVK,Slovakia,1983,0
+SVK,Slovakia,1984,0
+SVK,Slovakia,1985,0
+SVK,Slovakia,1986,0
+SVK,Slovakia,1987,0
+SVK,Slovakia,1988,0
+SVK,Slovakia,1989,0
+SVK,Slovakia,1990,0
+SVK,Slovakia,1991,0
+SVK,Slovakia,1992,0
 SVK,Slovakia,1993,0.293166667
 SVK,Slovakia,1994,1.613083333
 SVK,Slovakia,1995,0.499416667
@@ -5134,6 +6017,37 @@ SVK,Slovakia,2016,1.643083333
 SVK,Slovakia,2017,1.444416667
 SVK,Slovakia,2018,2.526333333
 SVK,Slovakia,2019,2.625833333
+SLO,Slovenia,1961,0
+SLO,Slovenia,1962,0
+SLO,Slovenia,1963,0
+SLO,Slovenia,1964,0
+SLO,Slovenia,1965,0
+SLO,Slovenia,1966,0
+SLO,Slovenia,1967,0
+SLO,Slovenia,1968,0
+SLO,Slovenia,1969,0
+SLO,Slovenia,1970,0
+SLO,Slovenia,1971,0
+SLO,Slovenia,1972,0
+SLO,Slovenia,1973,0
+SLO,Slovenia,1974,0
+SLO,Slovenia,1975,0
+SLO,Slovenia,1976,0
+SLO,Slovenia,1977,0
+SLO,Slovenia,1978,0
+SLO,Slovenia,1979,0
+SLO,Slovenia,1980,0
+SLO,Slovenia,1981,0
+SLO,Slovenia,1982,0
+SLO,Slovenia,1983,0
+SLO,Slovenia,1984,0
+SLO,Slovenia,1985,0
+SLO,Slovenia,1986,0
+SLO,Slovenia,1987,0
+SLO,Slovenia,1988,0
+SLO,Slovenia,1989,0
+SLO,Slovenia,1990,0
+SLO,Slovenia,1991,0
 SLO,Slovenia,1992,1.315
 SLO,Slovenia,1993,0.682166667
 SLO,Slovenia,1994,1.909166667
@@ -5398,6 +6312,56 @@ SRI,Sri Lanka,2016,1.338583333
 SRI,Sri Lanka,2017,1.085
 SRI,Sri Lanka,2018,0.844
 SRI,Sri Lanka,2019,1.252
+SUD,Sudan,1961,0
+SUD,Sudan,1962,0
+SUD,Sudan,1963,0
+SUD,Sudan,1964,0
+SUD,Sudan,1965,0
+SUD,Sudan,1966,0
+SUD,Sudan,1967,0
+SUD,Sudan,1968,0
+SUD,Sudan,1969,0
+SUD,Sudan,1970,0
+SUD,Sudan,1971,0
+SUD,Sudan,1972,0
+SUD,Sudan,1973,0
+SUD,Sudan,1974,0
+SUD,Sudan,1975,0
+SUD,Sudan,1976,0
+SUD,Sudan,1977,0
+SUD,Sudan,1978,0
+SUD,Sudan,1979,0
+SUD,Sudan,1980,0
+SUD,Sudan,1981,0
+SUD,Sudan,1982,0
+SUD,Sudan,1983,0
+SUD,Sudan,1984,0
+SUD,Sudan,1985,0
+SUD,Sudan,1986,0
+SUD,Sudan,1987,0
+SUD,Sudan,1988,0
+SUD,Sudan,1989,0
+SUD,Sudan,1990,0
+SUD,Sudan,1991,0
+SUD,Sudan,1992,0
+SUD,Sudan,1993,0
+SUD,Sudan,1994,0
+SUD,Sudan,1995,0
+SUD,Sudan,1996,0
+SUD,Sudan,1997,0
+SUD,Sudan,1998,0
+SUD,Sudan,1999,0
+SUD,Sudan,2000,0
+SUD,Sudan,2001,0
+SUD,Sudan,2002,0
+SUD,Sudan,2003,0
+SUD,Sudan,2004,0
+SUD,Sudan,2005,0
+SUD,Sudan,2006,0
+SUD,Sudan,2007,0
+SUD,Sudan,2008,0
+SUD,Sudan,2009,0
+SUD,Sudan,2010,0
 SUD,Sudan,2011,0.939916667
 SUD,Sudan,2012,1.109166667
 SUD,Sudan,2013,1.249416667
@@ -5643,6 +6607,37 @@ SYR,Syria,2016,1.673333333
 SYR,Syria,2017,1.511833333
 SYR,Syria,2018,2.307
 SYR,Syria,2019,1.536333333
+TJK,Tajikistan,1961,0
+TJK,Tajikistan,1962,0
+TJK,Tajikistan,1963,0
+TJK,Tajikistan,1964,0
+TJK,Tajikistan,1965,0
+TJK,Tajikistan,1966,0
+TJK,Tajikistan,1967,0
+TJK,Tajikistan,1968,0
+TJK,Tajikistan,1969,0
+TJK,Tajikistan,1970,0
+TJK,Tajikistan,1971,0
+TJK,Tajikistan,1972,0
+TJK,Tajikistan,1973,0
+TJK,Tajikistan,1974,0
+TJK,Tajikistan,1975,0
+TJK,Tajikistan,1976,0
+TJK,Tajikistan,1977,0
+TJK,Tajikistan,1978,0
+TJK,Tajikistan,1979,0
+TJK,Tajikistan,1980,0
+TJK,Tajikistan,1981,0
+TJK,Tajikistan,1982,0
+TJK,Tajikistan,1983,0
+TJK,Tajikistan,1984,0
+TJK,Tajikistan,1985,0
+TJK,Tajikistan,1986,0
+TJK,Tajikistan,1987,0
+TJK,Tajikistan,1988,0
+TJK,Tajikistan,1989,0
+TJK,Tajikistan,1990,0
+TJK,Tajikistan,1991,0
 TJK,Tajikistan,1992,-0.205083333
 TJK,Tajikistan,1993,-0.322666667
 TJK,Tajikistan,1994,0.313666667
@@ -5922,29 +6917,49 @@ TRI,Trinidad and Tobago,1972,-0.078
 TRI,Trinidad and Tobago,1973,0.1205
 TRI,Trinidad and Tobago,1974,-0.333916667
 TRI,Trinidad and Tobago,1975,-0.363416667
+TRI,Trinidad and Tobago,1976,0
 TRI,Trinidad and Tobago,1977,0.135166667
 TRI,Trinidad and Tobago,1978,0.30425
 TRI,Trinidad and Tobago,1979,0.449333333
+TRI,Trinidad and Tobago,1980,0
 TRI,Trinidad and Tobago,1981,0.483166667
+TRI,Trinidad and Tobago,1982,0
 TRI,Trinidad and Tobago,1983,0.4295
+TRI,Trinidad and Tobago,1984,0
+TRI,Trinidad and Tobago,1985,0
+TRI,Trinidad and Tobago,1986,0
 TRI,Trinidad and Tobago,1987,0.669166667
 TRI,Trinidad and Tobago,1988,0.476333333
 TRI,Trinidad and Tobago,1989,-0.046333333
 TRI,Trinidad and Tobago,1990,0.260666667
+TRI,Trinidad and Tobago,1991,0
 TRI,Trinidad and Tobago,1992,0.399416667
 TRI,Trinidad and Tobago,1993,0.491666667
 TRI,Trinidad and Tobago,1994,0.412
+TRI,Trinidad and Tobago,1995,0
+TRI,Trinidad and Tobago,1996,0
+TRI,Trinidad and Tobago,1997,0
+TRI,Trinidad and Tobago,1998,0
+TRI,Trinidad and Tobago,1999,0
+TRI,Trinidad and Tobago,2000,0
+TRI,Trinidad and Tobago,2001,0
+TRI,Trinidad and Tobago,2002,0
 TRI,Trinidad and Tobago,2003,1.146833333
 TRI,Trinidad and Tobago,2004,0.781
 TRI,Trinidad and Tobago,2005,1.4935
 TRI,Trinidad and Tobago,2006,0.991833333
 TRI,Trinidad and Tobago,2007,0.96275
+TRI,Trinidad and Tobago,2008,0
+TRI,Trinidad and Tobago,2009,0
 TRI,Trinidad and Tobago,2010,1.580166667
 TRI,Trinidad and Tobago,2011,1.167333333
 TRI,Trinidad and Tobago,2012,0.97125
 TRI,Trinidad and Tobago,2013,0.887583333
 TRI,Trinidad and Tobago,2014,1.2855
 TRI,Trinidad and Tobago,2015,1.284833333
+TRI,Trinidad and Tobago,2016,0
+TRI,Trinidad and Tobago,2017,0
+TRI,Trinidad and Tobago,2018,0
 TRI,Trinidad and Tobago,2019,1.466166667
 TUN,Tunisia,1961,0.395916667
 TUN,Tunisia,1962,-0.125083333
@@ -6123,6 +7138,37 @@ UGA,Uganda,2016,1.2995
 UGA,Uganda,2017,1.592833333
 UGA,Uganda,2018,0.9925
 UGA,Uganda,2019,1.449333333
+UKR,Ukraine,1961,0
+UKR,Ukraine,1962,0
+UKR,Ukraine,1963,0
+UKR,Ukraine,1964,0
+UKR,Ukraine,1965,0
+UKR,Ukraine,1966,0
+UKR,Ukraine,1967,0
+UKR,Ukraine,1968,0
+UKR,Ukraine,1969,0
+UKR,Ukraine,1970,0
+UKR,Ukraine,1971,0
+UKR,Ukraine,1972,0
+UKR,Ukraine,1973,0
+UKR,Ukraine,1974,0
+UKR,Ukraine,1975,0
+UKR,Ukraine,1976,0
+UKR,Ukraine,1977,0
+UKR,Ukraine,1978,0
+UKR,Ukraine,1979,0
+UKR,Ukraine,1980,0
+UKR,Ukraine,1981,0
+UKR,Ukraine,1982,0
+UKR,Ukraine,1983,0
+UKR,Ukraine,1984,0
+UKR,Ukraine,1985,0
+UKR,Ukraine,1986,0
+UKR,Ukraine,1987,0
+UKR,Ukraine,1988,0
+UKR,Ukraine,1989,0
+UKR,Ukraine,1990,0
+UKR,Ukraine,1991,0
 UKR,Ukraine,1992,0.427583333
 UKR,Ukraine,1993,-0.45625
 UKR,Ukraine,1994,0.880083333
@@ -6328,6 +7374,37 @@ URU,Uruguay,2016,0.30775
 URU,Uruguay,2017,1.54425
 URU,Uruguay,2018,0.956666667
 URU,Uruguay,2019,0.800833333
+UZB,Uzbekistan,1961,0
+UZB,Uzbekistan,1962,0
+UZB,Uzbekistan,1963,0
+UZB,Uzbekistan,1964,0
+UZB,Uzbekistan,1965,0
+UZB,Uzbekistan,1966,0
+UZB,Uzbekistan,1967,0
+UZB,Uzbekistan,1968,0
+UZB,Uzbekistan,1969,0
+UZB,Uzbekistan,1970,0
+UZB,Uzbekistan,1971,0
+UZB,Uzbekistan,1972,0
+UZB,Uzbekistan,1973,0
+UZB,Uzbekistan,1974,0
+UZB,Uzbekistan,1975,0
+UZB,Uzbekistan,1976,0
+UZB,Uzbekistan,1977,0
+UZB,Uzbekistan,1978,0
+UZB,Uzbekistan,1979,0
+UZB,Uzbekistan,1980,0
+UZB,Uzbekistan,1981,0
+UZB,Uzbekistan,1982,0
+UZB,Uzbekistan,1983,0
+UZB,Uzbekistan,1984,0
+UZB,Uzbekistan,1985,0
+UZB,Uzbekistan,1986,0
+UZB,Uzbekistan,1987,0
+UZB,Uzbekistan,1988,0
+UZB,Uzbekistan,1989,0
+UZB,Uzbekistan,1990,0
+UZB,Uzbekistan,1991,0
 UZB,Uzbekistan,1992,0.237083333
 UZB,Uzbekistan,1993,-0.6025
 UZB,Uzbekistan,1994,0.124916667
@@ -6509,6 +7586,7 @@ ZAM,Zambia,1992,0.794
 ZAM,Zambia,1993,-0.004833333
 ZAM,Zambia,1994,0.34975
 ZAM,Zambia,1995,0.679416667
+ZAM,Zambia,1996,0
 ZAM,Zambia,1997,0.528333333
 ZAM,Zambia,1998,0.961916667
 ZAM,Zambia,1999,0.287333333

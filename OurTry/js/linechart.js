@@ -64,12 +64,15 @@ var Linechart = (function(){
                 })
                 .map(data);
             console.log(processedData);
+            console.log(countrySelection[0]);
             // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
             years.forEach(year => {
                 if(!(processedData.get(countrySelection[0]).has(year))){
                     processedData.get(countrySelection[0]).set(year, { TotalMedals:0 });
                 }
             });
+             
+
 
             // yScale.domain([-2, (d3.max(processedData.get(countrySelection[0]).entries(), d => d.value.TotalMedals + 1 ))]);
             yScale.domain([-2, 3.5]);
