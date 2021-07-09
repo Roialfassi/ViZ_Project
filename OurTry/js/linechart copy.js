@@ -63,14 +63,14 @@ var Linechart = (function(){
                     };
                 })
                 .map(data);
-            // console.log(processedData);
-            // console.log(countrySelection[0]);
+            console.log(processedData);
+            console.log(countrySelection[0]);
             // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
-            // years.forEach(year => {
-            //     if(!(processedData.get(countrySelection[0]).has(year))){
-            //         processedData.get(countrySelection[0]).set(year, { TotalMedals:0 });
-            //     }
-            // });
+            years.forEach(year => {
+                if(!(processedData.get(countrySelection[0]).has(year))){
+                    processedData.get(countrySelection[0]).set(year, { TotalMedals:0 });
+                }
+            });
              
 
 
@@ -118,17 +118,17 @@ var Linechart = (function(){
             for(i = 0; i < 4; i++) {
                 // Line.
                 svg.append("path")
-                    .datum(processedData.get("USA").entries().sort(descending))
-                    .attr("class", d => "line id" + i + (i == 0 ? " hidden" : " hidden"))
+                    .datum(processedData.get(countrySelection[0]).entries().sort(descending))
+                    .attr("class", d => "line id" + i + (i == 0 ? "" : " hidden"))
                     .attr("stroke", d => getColor(countrySelection[0]))
                     .attr("d", line);
                 
                 // Dots in Line.
                 svg.selectAll(".dot id" + i)
-                    .data(processedData.get("USA").entries().sort(descending))
+                    .data(processedData.get(countrySelection[0]).entries().sort(descending))
                     .enter().append("circle")
-                    .attr("class", d => "dot id" + i + (i == 0 ? " hidden" : " hidden"))
-                    .attr("fill", d => d3.rgb(getColor("USA")))
+                    .attr("class", d => "dot id" + i + (i == 0 ? "" : " hidden"))
+                    .attr("fill", d => d3.rgb(getColor(countrySelection[0])))
                     .attr("cx", (d, i) => xScale(i))
                     .attr("cy", d => yScale(d.value.TotalMedals))
                     .attr("r", 3)
@@ -203,7 +203,7 @@ var Linechart = (function(){
             .map(data);
                 
             let bestDomain = [0, 1];
-            console.log(countrySelection);        
+
             countrySelection.forEach(country => {
 
                 // Ignore null elements.

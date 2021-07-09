@@ -14,7 +14,7 @@ var selectedNode = null,
 
 // colors used throughout the visualization
 const eventsColors = d3.scaleOrdinal(d3.schemeSet3),
-    countryColors = ["#4000ff", "#ffffb3", "#8dd3c7", "#bebada"];
+    countryColors = ["#ff00ff", "#ffffb3", "#8dd3c7", "#bebada"];
 
 // array containing the years in which summer olympics occurred
 // const years = [1961,1966,1971,1976,1981,1986,1991,1996,2001,2006,2011,2016,2019];
@@ -158,7 +158,7 @@ function randomizeInitialCountry(array, initialCountryCode = null) {
         randomCountryCode = initialCountryCode;
     }
 
-    countrySelection = [initialCountryCode, null, null, null];
+    countrySelection = [/*initialCountryCode*/null, null, null, null];
 }
 
 /** 

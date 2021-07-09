@@ -233,7 +233,7 @@ var WorldMap = (function(){
                                 });
                             }
                         }
-                        if (!(getNumberOfCountriesInSelection() == 1 
+                        if (!(getNumberOfCountriesInSelection() == 0 
                           && countrySelection.includes(convertNameToIOCCode(d.properties.name_long)))) {
                             if(d3.select(this).classed("country-on")) {
                                 d3.select(this).classed("country-on", false)
