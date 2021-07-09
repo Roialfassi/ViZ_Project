@@ -8,8 +8,8 @@ var RadarChart = {
     levels: 3,
     levelTick: false,
     TickLength: 10,
-    maxValue: 0,
-    minValue: 0,
+    maxValue: 4,
+    minValue: -3,
     radians: 2 * Math.PI,
     color: d3.scale.category10(),
     axisLine: true,
@@ -103,7 +103,7 @@ var RadarChart = {
         }
 
         // levels && axises
-        var levelFactors = d3.range(-5, cfg.levels).map(function(level) {
+        var levelFactors = d3.range(0, cfg.levels).map(function(level) {
           return radius * ((level + 1) / cfg.levels);
         });
 
