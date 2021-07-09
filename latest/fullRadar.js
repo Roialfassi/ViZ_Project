@@ -100,7 +100,7 @@ endDate = 2019;
 // drawChart();
 
 
-update(2015);
+update(1972);
 // console.log("dataset1 + "+ dataset1);
 
 

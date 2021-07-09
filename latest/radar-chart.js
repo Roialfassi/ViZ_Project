@@ -103,7 +103,7 @@ var RadarChart = {
         }
 
         // levels && axises
-        var levelFactors = d3.range(0, cfg.levels).map(function(level) {
+        var levelFactors = d3.range(-5, cfg.levels).map(function(level) {
           return radius * ((level + 1) / cfg.levels);
         });
 
