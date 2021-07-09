@@ -1,7 +1,7 @@
 /**
  * TimeSlider Module
  */
-var TimeSlider = (function(){
+ var TimeSlider = (function(){
 
     const margin = {top: 10, right: 50, bottom: 10, left: 30}
         width = $("#timeslider").width(),
@@ -37,33 +37,31 @@ var TimeSlider = (function(){
             .call(d3.drag()
                 .on("drag", d => { 
                     target = round(xScale.invert(d3.event.x));
-                    selectedHandle = handle1;
-                    // if(selectedHandle === null){
-                    //     (Math.abs(target - xScale.invert(handle1.attr("cx"))) < Math.abs(target - xScale.invert(handle2.attr("cx"))) ?
-                    //         selectedHandle = handle1 :
-                    //         selectedHandle = handle2);
-                    // }
+                    if(selectedHandle === null){
+                        (Math.abs(target - xScale.invert(handle1.attr("cx"))) < Math.abs(target - xScale.invert(handle2.attr("cx"))) ?
+                            selectedHandle = handle1 :
+                            selectedHandle = handle2);
+                    }
                     moveHandle(target);
                 })
                 .on("end", d => {
                     // reset radius of selected handle
                     handle1.attr("r", 8);
-                   // handle2.attr("r", 8);
-                    //console.log(yearFilter.initial);
+                    handle2.attr("r", 8);
+                    console.log(yearFilter.initial);
                     // if both handles are the same year make them bigger
-                    // if(handle1.attr("cx") == handle2.attr("cx")){
-                    //     handle1.attr("r", 12);
-                    //     handle2.attr("r", 12);
-                    // }
+                    if(handle1.attr("cx") == handle2.attr("cx")){
+                        handle1.attr("r", 12);
+                        handle2.attr("r", 12);
+                    }
 
                     selectedHandle = null;
 
-                    changeTimeline(xScale.invert(handle1.attr("cx")), 58);
                     // update global time variable
-                    // (Math.round(handle1.attr("cx")) <= Math.round(handle2.attr("cx")) ?
-                    //      changeTimeline(xScale.invert(handle1.attr("cx")), xScale.invert(handle2.attr("cx"))) :
-                    //     changeTimeline(xScale.invert(handle2.attr("cx")), xScale.invert(handle1.attr("cx")))
-                    // );
+                    (Math.round(handle1.attr("cx")) <= Math.round(handle2.attr("cx")) ?
+                        changeTimeline(xScale.invert(handle1.attr("cx")), xScale.invert(handle2.attr("cx"))) :
+                        changeTimeline(xScale.invert(handle2.attr("cx")), xScale.invert(handle1.attr("cx")))
+                    );
                 })
             );
 
@@ -82,10 +80,10 @@ var TimeSlider = (function(){
             .attr("r", 8)
             .attr("cx", xScale(0));
     
-        // const handle2 = slider.insert("circle", ".track-overlay")
-        //     .attr("class", "handle")
-        //     .attr("r", 8)
-        //     .attr("cx", xScale(58));
+        const handle2 = slider.insert("circle", ".track-overlay")
+            .attr("class", "handle")
+            .attr("r", 8)
+            .attr("cx", xScale(58));
         
         function moveHandle(target){
             selectedHandle.attr("r", 10)

@@ -11,7 +11,7 @@ var WorldMap = (function(){
     const width = 2400,
         height = 1000;
     var myColor = d3.scaleLinear().domain([-2,3.5])
-        .range(["#fff5f0","#67000d"])
+        .range(["#FFFFFF","#FF2D00"])
 
 
     
@@ -52,7 +52,7 @@ var WorldMap = (function(){
     
         function initiateZoom() {
             // Define a "minzoom" whereby the "Countries" is as small possible without leaving white space at top/bottom or sides  
-            minZoom = Math.max( 2 * $("#worldmap").width() / width, 2 * $("#worldmap").height() / height);
+            minZoom = Math.max( 0.87 * $("#worldmap").width() / width, 0.87 * $("#worldmap").height() / height);
             // minZoom = Math.max( 1 * $("#worldmap").width() / width, 2 * $("#worldmap").height() / height);
 
             maxZoom = 20 * minZoom;
