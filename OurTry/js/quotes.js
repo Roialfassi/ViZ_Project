@@ -68,7 +68,7 @@
 
     var use = function() {
      
-        return quotes[yearFilter.initial-1961]["Quote"] + "\n -<strong>"+  quotes[yearFilter.initial-1961]["Author"]+"</strong>" ;
+        return "<div class=\"bubble-container\"> <div class=\"bubble\"> "+quotes[yearFilter.initial-1961]["Quote"] + "\n -<strong>"+  quotes[yearFilter.initial-1961]["Author"]+"</strong></div></div>" ;
     }  
 
 
