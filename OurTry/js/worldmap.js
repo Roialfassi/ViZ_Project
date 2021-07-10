@@ -124,7 +124,7 @@ var WorldMap = (function(){
                     };
                 })
                 .map(data);
-            console.log(processedData);
+            // console.log(processedData);
 
             // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
             // years.forEach(year => {
@@ -159,7 +159,7 @@ var WorldMap = (function(){
                     }
                 })
                 .attr("fill", function(d) {
-                    console.log(d);
+                    // console.log(d);
                     // console.log(d.properties.name_long);
                     // console.log(d.properties.brk_name);
                     if (d3.select(this).classed("non-selectable-country")) {

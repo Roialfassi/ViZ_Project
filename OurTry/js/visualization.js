@@ -14,7 +14,7 @@ var selectedNode = null,
 
 // colors used throughout the visualization
 const eventsColors = d3.scaleOrdinal(d3.schemeSet3),
-    countryColors = ["#ff00ff", "#ffffb3", "#8dd3c7", "#bebada"];
+    countryColors = ["#FEEC19", "#66FE19", "#3748DA", "#FF00E7"];
 
 // array containing the years in which summer olympics occurred
 // const years = [1961,1966,1971,1976,1981,1986,1991,1996,2001,2006,2011,2016,2019];
@@ -60,6 +60,7 @@ function updateDashboardState(nextState, initialUpdate = false) {
             break;
     }
 
+
     if(initialUpdate) {
         TimeSlider.initialize();
 
@@ -75,22 +76,25 @@ function updateDashboardState(nextState, initialUpdate = false) {
         WorldMap.update();
     }
 
-    let yearsText = 
-        (yearFilter.end == yearFilter.initial ? 
-            " in <strong>" + yearFilter.initial + "</strong>" :
-            " from <strong>" +  yearFilter.initial + "</strong> to <strong>" + yearFilter.end + "</strong>"
-        );
-    let countriesSection = countrySelectionToString();
+    let yearsText = (" in <strong>" + yearFilter.initial + "</strong>");
+    // (yearFilter.end == yearFilter.initial ? 
+    //     " in <strong>" + yearFilter.initial + "</strong>" :
+    //     " from <strong>" +  yearFilter.initial + "</strong> to <strong>" + yearFilter.end + "</strong>"
+    // );
+let countriesSection = countrySelectionToString();
 
     switch(currentState) {
         case 0:
             sportFilter = "All";
             currentFilterKeyword = "Sport";
-            $('#statelabel').html(
-                countriesSection + " on <strong> every Event </strong>" + yearsText
-            );
+            if(countrySelection[0] == null) 
+                $('#statelabel').html("<strong> World </strong> temperature differences " + yearsText);
+            else
+                $('#statelabel').html(" The temperature in " + countriesSection + yearsText);
+
             $('#back-icon-container').hide();
             break;
+
 
         case 1:
             sportFilter = selectedNode.Sport;
@@ -120,6 +124,11 @@ function updateDashboardState(nextState, initialUpdate = false) {
             $('#back-subtitle').text(disciplineFilter);
             break;
     }
+
+    let quoteText = Quotes.use();
+    $('#bubblechart').html(
+        quoteText
+    );
 }
 
 
