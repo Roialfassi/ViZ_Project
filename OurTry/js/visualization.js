@@ -87,9 +87,10 @@ let countriesSection = countrySelectionToString();
         case 0:
             sportFilter = "All";
             currentFilterKeyword = "Sport";
-            if(countrySelection[0] == null) 
-                $('#statelabel').html("<strong> World </strong> temperature differences " + yearsText);
-            else
+
+            // if(countrySelection[0] == null) 
+            //     $('#statelabel').html("<strong> World </strong> temperature differences " + yearsText);
+            // else
                 $('#statelabel').html(" The temperature in " + countriesSection + yearsText);
 
             $('#back-icon-container').hide();
@@ -239,6 +240,8 @@ function countrySelectionToString() {
     let string = "",            
         counter = 0;
 
+    if(getNumberOfCountriesInSelection() == 0)
+     return "<strong>The World</strong>"
     // Cicle through the countries in countrySelection.
     countrySelection.forEach((element, i) => {
 		if(element === null) {

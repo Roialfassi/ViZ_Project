@@ -118,17 +118,17 @@ var Linechart = (function(){
             for(i = 0; i < 4; i++) {
                 // Line.
                 svg.append("path")
-                    .datum(processedData.get("USA").entries().sort(descending))
-                    .attr("class", d => "line id" + i + (i == 0 ? " hidden" : " hidden"))
+                    .datum(processedData.get("WLD").entries().sort(descending))
+                    .attr("class", d => "line id" + i + (i == 0 ? "" : " hidden"))
                     .attr("stroke", d => getColor(countrySelection[0]))
                     .attr("d", line);
                 
                 // Dots in Line.
                 svg.selectAll(".dot id" + i)
-                    .data(processedData.get("USA").entries().sort(descending))
+                    .data(processedData.get("WLD").entries().sort(descending))
                     .enter().append("circle")
-                    .attr("class", d => "dot id" + i + (i == 0 ? " hidden" : " hidden"))
-                    .attr("fill", d => d3.rgb(getColor("USA")))
+                    .attr("class", d => "dot id" + i + (i == 0 ? "" : " hidden"))
+                    .attr("fill", d => d3.rgb(getColor("WLD")))
                     .attr("cx", (d, i) => xScale(i))
                     .attr("cy", d => yScale(d.value.TotalMedals))
                     .attr("r", 3)
@@ -203,7 +203,7 @@ var Linechart = (function(){
             .map(data);
                 
             let bestDomain = [0, 1];
-            console.log(countrySelection);        
+            console.log(countrySelection);
             countrySelection.forEach(country => {
 
                 // Ignore null elements.
@@ -222,7 +222,6 @@ var Linechart = (function(){
                     // yScale.domain(bestDomain).nice()
                 }
             });
-
             // Update line generator for new values.
             let lineGenerator = d3.line()
                 .x((d, i) => xScale(i))
@@ -265,8 +264,41 @@ var Linechart = (function(){
 
                     // Make line visible
                     showLine(i);
-            });
-        }) 
+            });   
+
+            /*If empty show world */
+            if(getNumberOfCountriesInSelection() == 0) 
+            {
+                svg.select(".line.id" + 0)
+                .datum(processedData.get("WLD").entries().sort(descending))
+                .transition().duration(animationTime)
+                .ease(d3.easeExp)
+                .attr("stroke", "#FEEC19")
+                .attr("d", lineGenerator);
+
+            svg.selectAll(".dot.id" + 0)
+                .data(processedData.get("WLD").entries().sort(descending))
+                .transition()
+                .duration(animationTime)
+                .ease(d3.easeExp)
+                .attr("cy", d => yScale(d.value.TotalMedals))
+                .attr("fill", d => {
+                    return (checkIfYearInInterval(d.key) ? 
+                        d3.rgb(getColor(0))
+                        :  d3.rgb(getColor(0)).brighter());
+                })
+                .attr("opacity", d => (checkIfYearInInterval(d.key) ? 1 : 0.6))
+                .attr("r", 3/*d => (checkIfYearInInterval(d.key) ? 8 : 4)*/);
+
+                // Make line visible
+                showLine(0);
+
+            }
+           
+
+        })
+        
+        
     };
 
     var hideLine = function(lineID) {
