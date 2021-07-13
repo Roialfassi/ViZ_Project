@@ -44,7 +44,11 @@ $(document).ready(function() {
  * @param {boolean} initialUpdate - flag determining if its the first update (default = false)
 */
 function updateDashboardState(nextState, initialUpdate = false) {
-
+    // legend({
+    //     color: d3.scaleThreshold([2.5, 3.1, 3.5, 3.9, 6, 7, 8, 9.5], d3.schemeRdBu[9]),
+    //     title: "Unemployment rate (%)",
+    //     tickSize: 0
+    //   })
     switch(nextState){
         case -1:
             if(++currentState > 3) {

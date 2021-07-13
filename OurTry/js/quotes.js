@@ -47,7 +47,7 @@
     {Year: 2000, Quote: "We see incredible opportunity to solve some of the biggest social challenges we have by combining high-performance computing and AI - such as climate change and more.", Author: "Lisa Su"},
     {Year: 2001, Quote: "Good stewardship of the environment is not just a personal responsibility, it is a public value... Our duty is to use the land well, and sometimes not to use it at all. This is our responsibility as citizens, but more than that, it is our calling as stewards of the earth", Author: "George W. Bush"},
     {Year: 2002, Quote: "Climate change is crap.", Author: "Tony Abbott"},
-    {Year: 2003, Quote: "For many of us, water simply flows from a faucet, and we think little about it beyond this point of contact. We have lost a sense of respect for the wild river", Author: " for the complex workings of a wetland"},
+    {Year: 2003, Quote: "For many of us, water simply flows from a faucet, and we think little about it beyond this point of contact. We have lost a sense of respect for the wild river for the complex workings of a wetland", Author: "Sandra Postel"},
     {Year: 2004, Quote: "Climate change is not just about carbon dioxide levels and melting polar ice caps. It is about our public health and protecting our Earth for future generations.", Author: "Mike Quigley"},
     {Year: 2005, Quote: "Climate change is real, caused by human activity and already devastating our nation and planet. The United States must lead the world in combating climate change and transforming our energy system away from fossil fuels and toward energy efficiency and sustainability.", Author: "Bernie Sanders"},
     {Year: 2006, Quote: "Climate change is sometimes misunderstood as being about changes in the weather. In reality it is about changes in our very way of life", Author: "Paul Polman"},
@@ -67,8 +67,33 @@
 
 
     var use = function() {
-     
-        return "<div class=\"bubble-container\"> <div class=\"bubble\"> "+quotes[yearFilter.initial-1961]["Quote"] + "\n -<strong>"+  quotes[yearFilter.initial-1961]["Author"]+"</strong></div></div>" ;
+        var result = "<div class=\"bubble-container\"> <div class=\"bubble\">"+quotes[yearFilter.initial-1961]["Quote"] + "<strong><br>-"+ quotes[yearFilter.initial-1961]["Author"]+"</strong></div></div>";
+        // var result = "<div class=\"bubble\">"+quotes[yearFilter.initial-1961]["Quote"] + "\n<strong>"+ quotes[yearFilter.initial-1961]["Author"]+"</strong></div>";
+        // result+= `<div class=\"bubble-container2\"> <div class=\"bubble2\">
+        // <svg height="150" width="120" id="svg-color-threshold">
+        // // <g class="legendThreshold" transform="translate(20,20)"><g class="legendCells">
+        // //     <g class="cell" transform="translate(0, 0)"><rect class="swatch" height="15" width="30" style="fill: #FFFFFF;"></rect><text class="label"  transform="translate( 40, 12.5)">.  -2.5 C</text></g>
+        // //     <g class="cell" transform="translate(0, 17)"><rect class="swatch" height="15" width="30" style="fill: #FFD5CC;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        // //     <g class="cell" transform="translate(0, 34)"><rect class="swatch" height="15" width="30" style="fill: #FFAB99;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        // //     <g class="cell" transform="translate(0, 51)"><rect class="swatch" height="15" width="30" style="fill: #FF8166;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        // //     <g class="cell" transform="translate(0, 68)"><rect class="swatch" height="15" width="30" style="fill: #FF5733;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        // //     <g class="cell" transform="translate(0, 85)"><rect class="swatch" height="15" width="30" style="fill: #FF2D00;"></rect><text class="label" transform="translate( 40, 12.5)">.  3.5 C</text></g></g></g></svg></div></div>`
+        
+        return result
+        // return "<div class=\"bubble-container\"> <div class=\"bubble\">"+quotes[yearFilter.initial-1961]["Quote"] + "\n<strong>"+ quotes[yearFilter.initial-1961]["Author"]+"</strong></div></div>"   
+        // </div>"
+        // return `<div class=\"bubble-container\"> <div class=\"bubble\">"+quotes[yearFilter.initial-1961]["Quote"] + "\n<strong>"+ quotes[yearFilter.initial-1961]["Author"]+"</strong>   
+        // </div>
+        // <br>
+        // <svg height="150" width="120" id="svg-color-threshold">
+        // <g class="legendThreshold" transform="translate(20,20)"><g class="legendCells">
+        //     <g class="cell" transform="translate(0, 0)"><rect class="swatch" height="15" width="30" style="fill: #FFFFFF;"></rect><text class="label"  transform="translate( 40, 12.5)">-2.5 C</text></g>
+        //     <g class="cell" transform="translate(0, 17)"><rect class="swatch" height="15" width="30" style="fill: #FFD5CC;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        //     <g class="cell" transform="translate(0, 34)"><rect class="swatch" height="15" width="30" style="fill: #FFAB99;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        //     <g class="cell" transform="translate(0, 51)"><rect class="swatch" height="15" width="30" style="fill: #FF8166;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        //     <g class="cell" transform="translate(0, 68)"><rect class="swatch" height="15" width="30" style="fill: #FF5733;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+        //     <g class="cell" transform="translate(0, 85)"><rect class="swatch" height="15" width="30" style="fill: #FF2D00;"></rect><text class="label" transform="translate( 40, 12.5)">3.5 C</text></g></g></g></svg>
+        // </div>` ;
     }  
 
 

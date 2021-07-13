@@ -1,7 +1,7 @@
 /**
  * Linechart Module
  */
-var Linechart = (function(){
+var Barchart = (function(){
 
     let svg,
         margin = {top: 50, right: 50, bottom: 50, left: 50},
@@ -46,7 +46,7 @@ var Linechart = (function(){
             .curve(d3.curveMonotoneX);
 
         // start drawing the Linechart from the csv
-        d3.csv("csv/avgByYearPerCountry.csv").then(data => {
+        d3.csv("csv/countriesWithCountryCode87.csv").then(data => {
 
             data.forEach(d => {
                 d.Year = +d.Year;

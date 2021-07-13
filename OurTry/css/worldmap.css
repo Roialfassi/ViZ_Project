@@ -2,7 +2,7 @@
     width: 60%;
     height: 55%;
     float: left;
-    background: var(--main-bg-color);
+    background:#03A9F4;/* var(--main-bg-color);*/
 }
 
 #worldmap svg {

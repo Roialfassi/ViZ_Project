@@ -1,7 +1,9 @@
 :root {
     --main-dark-color:#333333;
     --main-white-color:#FCFBE3;
-    --main-bg-color:#D2D4D3;
+    /*--main-bg-color:#D2D4D3;*/
+    --main-bg-color:#acc8df ;
+   /* --main-bg-color:#FFFFFF ;*/
     --old-main-bg-color: #E3E5E4;
 
     --main-dark-trans-color: rgba(51,51,51,0.9);

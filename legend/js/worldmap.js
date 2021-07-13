@@ -10,7 +10,7 @@ var WorldMap = (function(){
 
     const width = 2400,
         height = 1000;
-    var myColor = d3.scaleLinear().domain([-2.5,3.5])
+    var myColor = d3.scaleLinear().domain([-2,3.5])
         .range(["#FFFFFF","#FF2D00"])
     
     /**
@@ -27,7 +27,7 @@ var WorldMap = (function(){
             currentX,
             currentY,
             currentZoom;
- 
+
         // var svg = d3.select("svg");
         // svg.append("g")
         // .attr("id", "body")
