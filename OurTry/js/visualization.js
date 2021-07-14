@@ -68,15 +68,17 @@ function updateDashboardState(nextState, initialUpdate = false) {
     if(initialUpdate) {
         TimeSlider.initialize();
 
-        Bubblechart.initialize();
+        // Bubblechart.initialize();
         WorldMap.initialize();
         Linechart.initialize();
-        Scatterplot.initialize();
+        // Scatterplot.initialize();
+        Barchart.initialize();
 
     } else {
-        Bubblechart.update();
+        // Bubblechart.update();
         Linechart.update();
-        Scatterplot.update();
+        // Scatterplot.update();
+        Barchart.update();
         WorldMap.update();
     }
 

@@ -52,7 +52,7 @@ d3.tip = function() {
     coords = direction_callbacks[dir].apply(this)
     nodel.classed(dir, true)
       .style('top', (coords.top +  poffset[0]) + scrollTop + 'px')
-      .style('left', (coords.left + poffset[1]) + scrollLeft + 'px')
+      .style('left', ((coords.left + poffset[1]) + scrollLeft) >=0?(coords.left + poffset[1]) + scrollLeft + 'px': 0 + 'px')
 
     return tip
   }

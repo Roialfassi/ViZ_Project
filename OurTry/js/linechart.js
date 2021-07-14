@@ -64,6 +64,8 @@ var Linechart = (function(){
                 })
                 .map(data);
             // console.log(processedData);
+            // console.log(processedData.get("WLD"))
+            // console.log(processedData.get("WLD").entries().sort(descending))
             // console.log(countrySelection[0]);
             // Fill blank spaces in array with zeroes (for years in which a country didn't won any medals).
             // years.forEach(year => {
@@ -75,7 +77,7 @@ var Linechart = (function(){
 
 
             // yScale.domain([-2, (d3.max(processedData.get(countrySelection[0]).entries(), d => d.value.TotalMedals + 1 ))]);
-            yScale.domain([-2, 3.5]);
+            yScale.domain([-2, 2]);
             
             svg = d3.select("#linechart")
                 .append("svg")
@@ -204,8 +206,16 @@ var Linechart = (function(){
                 
             let bestDomain = [0, 1];
             console.log(countrySelection);
+            var min=10;
+            var max =-10;
             countrySelection.forEach(country => {
 
+                if(getNumberOfCountriesInSelection() == 0)
+                {
+                    min=-1.5;
+                    max = 1.5;
+                    return;
+                }
                 // Ignore null elements.
                 if(country === null){ return; }
 
@@ -217,11 +227,19 @@ var Linechart = (function(){
                 });
 
                 // Readjust the Y Scale.
-                if(bestDomain[1] < d3.extent(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; })[1]){
-                    bestDomain = d3.extent(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; });
-                    // yScale.domain(bestDomain).nice()
+                if(max < d3.max(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; })){
+                    max = d3.max(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; });
                 }
+
+                if(min > d3.min(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; })){
+                    min = d3.min(processedData.get(country).entries(), function(d) { return d.value.TotalMedals; });
+                }
+             
             });
+            max +=0.5;
+            min -=0.5;
+            yScale.domain([min, max]);
+
             // Update line generator for new values.
             let lineGenerator = d3.line()
                 .x((d, i) => xScale(i))
