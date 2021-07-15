@@ -1,0 +1,114 @@
+#bubblechart {  
+    width: 40%;
+    height: 55%;
+    float: left; 
+    background: var(--main-bg-color);;
+    /* */
+}
+
+#bubblechart #back-icon-container {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    display: none;
+    margin: auto;
+}
+
+#bubblechart #back-icon {
+    width: 48px;
+}
+
+#bubblechart #back-subtitle {
+    position:absolute;
+    left: 50%;
+    bottom: -7px;
+    font-size: 1em;
+    font-weight: bold;
+    white-space:nowrap;
+    
+}
+
+#bubblechart .label {
+    fill: var(--main-dark-color) !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-anchor: middle;
+    pointer-events: none;
+    white-space: pre-wrap;
+}
+
+#bubblechart .label {
+    fill: var(--main-dark-color) !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-anchor: middle;
+    pointer-events: none;
+    white-space: pre-wrap;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+.bubble {
+    width: 100%;
+    /* height: 100%; */
+    padding: .5em 1em;
+    line-height: 1.4em;
+    padding: 20px;
+    background-color: #ecf0f1;
+    position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left:10%;
+    margin-right: 10%;
+    display: inline-block; }
+  
+   .bubble-container {
+    width: 75%;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    vertical-align: center;
+    display: inline-block; 
+} 
+
+.bubble3 {
+    width: 100%;
+    /* height: 100%; */
+    padding: .5em 1em;
+    line-height: 1.4em;
+    padding: 20px;
+    background-color: var(main-bg-color);
+    position: fixed;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+    text-align: right;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    margin-left:47%;
+    margin-right: 5%;
+    display: inline-block;
+    z-index: 2;
+}
+.bubble2{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 59%;
+    left: 56%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -250px; /* Negative half of width. */
+}
+  

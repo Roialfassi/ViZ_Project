@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<head>
+        <meta charset="utf-8">
+		<title>Global Warming Viz Project</title>
+        <link rel="icon" type="image/png" href="res/climate.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,600" rel="stylesheet">
+
+        <script src="js/jquery/jquery-3.3.1.min.js" charset="utf-8"></script>
+
+        <script src="js/d3/d3.min.js" charset="utf-8"></script>
+        <script src="js/d3/d3-tip.js" charset="utf-8"></script>
+
+        <link href="css/visualization.css" rel="stylesheet">
+        <link href="css/timeslider.css" rel="stylesheet">
+        <link href="css/bubblechart.css" rel="stylesheet">
+        <link href="css/linechart.css" rel="stylesheet">
+        <link href="css/scatterplot.css" rel="stylesheet">
+        <link href="css/worldmap.css" rel="stylesheet">
+        
+	</head>
+    
+    <body>
+
+        <div id="header">
+            <span id="statelabel" class ="unselectable"></span>
+            <div id="timeslider"></div>
+            <span class="subtitle unselectable">Climate Change - Made By Roi Alfassi and Lior Ben David with ❤️</span>        
+        </div>
+
+
+        <div id="bubblechart">
+            <div id="back-icon-container">
+                <img id="back-icon" src="res/svg/back.svg">
+                <span id="back-subtitle" class="unselectable"></span>
+            </div>
+            <div id="bubble-container"class="bubble-container"></div>
+        </div>
+        <div class="bubble-container2"> <div class="bubble2">
+            <svg height="150" width="120" id="svg-color-threshold">
+             <g class="legendThreshold" transform="translate(20,20)"><g class="legendCells">
+                 <g class="cell" transform="translate(0, 0)"><rect class="swatch" height="15" width="30" style="fill: #1E90FF;"></rect><text class="label"  transform="translate( 43, 12.5)">-2.5 &#8451</text></g>
+                 <g class="cell" transform="translate(0, 15)"><rect class="swatch" height="15" width="30" style="fill: #69B5FF;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                 <g class="cell" transform="translate(0, 30)"><rect class="swatch" height="15" width="30" style="fill: #B4DAFF;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                 <g class="cell" transform="translate(0, 45)"><rect class="swatch" height="15" width="30" style="fill: #FFFFFF;"></rect><text class="label" transform="translate( 47, 12.5)">0 &#8451</text></g>
+                 <g class="cell" transform="translate(0, 60)"><rect class="swatch" height="15" width="30" style="fill: #FFC1AA;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                 <g class="cell" transform="translate(0, 75)"><rect class="swatch" height="15" width="30" style="fill: #FF8355;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                 <g class="cell" transform="translate(0, 90)"><rect class="swatch" height="15" width="30" style="fill: #FF4500;"></rect><text class="label" transform="translate( 47, 12.5)">3.5 &#8451</text></g></g></g></svg>
+                </div></div>
+
+
+        <div id="worldmap">
+            <!-- <svg height="60" width="200" id="svg-color-linear"><g class="legendLinear" transform="translate(20,20)"><g class="legendCells"><g class="cell" transform="translate(0,0)"><rect class="swatch" height="15" width="30" style="fill: rgb(255, 255, 255);"></rect><text class="label" transform="translate(15,
+                33)" style="text-anchor: right;">-2.5</text></g><g class="cell" transform="translate(32,0)"><rect class="swatch" height="15" width="30" style="fill: rgb(255, 198, 185);"></rect><text class="label" transform="translate(15,
+                33)" style="text-anchor: middle;"></text></g><g class="cell" transform="translate(64,0)"><rect class="swatch" height="15" width="30" style="fill: rgb(255, 160, 139);"></rect><text class="label" transform="translate(15,
+                33)" style="text-anchor: middle;"></text></g><g class="cell" transform="translate(96,0)"><rect class="swatch" height="15" width="30" style="fill: rgb(255, 102, 70);"></rect><text class="label" transform="translate(15,
+                33)" style="text-anchor: middle;"></text></g><g class="cell" transform="translate(128,0)"><rect class="swatch" height="15" width="30" style="fill: #FF2D00;"></rect><text class="label" transform="translate(15,
+                33)" style="text-anchor: left;">3.5</text></g></g></g></svg>
+         -->
+                <!-- <svg height="150" width="120" id="svg-color-threshold">
+                    <g class="legendThreshold" transform="translate(20,20)"><g class="legendCells">
+                        <g class="cell" transform="translate(0, 0)"><rect class="swatch" height="15" width="30" style="fill: #FFFFFF;"></rect><text class="label"  transform="translate( 40, 12.5)">-2.5 C</text></g>
+                        <g class="cell" transform="translate(0, 17)"><rect class="swatch" height="15" width="30" style="fill: #FFD5CC;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                        <g class="cell" transform="translate(0, 34)"><rect class="swatch" height="15" width="30" style="fill: #FFAB99;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                        <g class="cell" transform="translate(0, 51)"><rect class="swatch" height="15" width="30" style="fill: #FF8166;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                        <g class="cell" transform="translate(0, 68)"><rect class="swatch" height="15" width="30" style="fill: #FF5733;"></rect><text class="label" transform="translate( 40, 12.5)"></text></g>
+                        <g class="cell" transform="translate(0, 85)"><rect class="swatch" height="15" width="30" style="fill: #FF2D00;"></rect><text class="label" transform="translate( 40, 12.5)">3.5 C</text></g></g></g></svg> -->
+            </div>
+        
+        <div id="scatterplot"></div>
+
+        <div id="linechart"></div>
+        <!-- <div id="legend" class="legend"></div> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.13.0/d3-legend.js"></script>
+        <script src="js/legendmap.js"></script>
+        <script src="js/visualization.js"></script>
+        <script src="js/timeslider.js"></script>
+        <script src="js/bubblechart.js"></script>
+        <script src="js/linechart.js"></script>
+        <script src="js/scatterplot.js"></script>
+        <script src="js/worldmap.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/Barchart.js"></script>
+
+	</body>
