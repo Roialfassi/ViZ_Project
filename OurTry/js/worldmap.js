@@ -10,8 +10,9 @@ var WorldMap = (function(){
 
     const width = 2400,
         height = 1000;
-    var myColor = d3.scaleLinear().domain([-2.5,3.5])
-        .range(["#FFFFFF","#FF2D00"])
+    var myColor = d3.scaleLinear().domain([-2.5, 0, 3.5])
+       .range(["#0000FF","#FFFFFF","#FF0000"]);
+         //.range(["blue", "white", "red"]);
     
     /**
      * Initializes the Worldmap Entity.

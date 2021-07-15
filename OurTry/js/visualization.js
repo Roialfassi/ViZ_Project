@@ -14,7 +14,8 @@ var selectedNode = null,
 
 // colors used throughout the visualization
 const eventsColors = d3.scaleOrdinal(d3.schemeSet3),
-    countryColors = ["#FEEC19", "#66FE19", "#3748DA", "#FF00E7"];
+   // countryColors = [/*"#D57912" */"#FF9200", "#848480", "#3748DA", "#FF00E7"];
+    countryColors = ["#C96A06", "green", "yellow", "#942BEF"];
 
 // array containing the years in which summer olympics occurred
 // const years = [1961,1966,1971,1976,1981,1986,1991,1996,2001,2006,2011,2016,2019];
