@@ -35,7 +35,7 @@ var Barchart = (function(){
             // .direction('e')
             .offset([-10, 0])
             .html(d => {
-                return "<strong>" + d.value.TotalMedals.toFixed(3) + " &#8451</strong> Temperature Difference in <strong>" + month[d.key-1] + "</strong>";
+                return d.value.TotalMedals != 0? "<strong>" + d.value.TotalMedals.toFixed(3) + " &#8451</strong> Temperature Difference in <strong>" + month[d.key-1] + "</strong>":"No Data";
             });
 
     var initialize = function() {
@@ -102,6 +102,14 @@ var Barchart = (function(){
                 .attr("dy", "1em")
                 .style("text-anchor", "middle")
                 .text("Temperature Change °C");
+            svg.append("text")
+                .attr("x", ((width / 2)-50))             
+                .attr("y", 0 - (margin.top / 2))
+                .attr("text-anchor", "middle")  
+                .style("font-size", "16px") 
+                .style("text-decoration", "underline")  
+                .text("Temperature change by Month");
+ 
 
                 // Create 4 line Entitities
                 for(i = 0; i < 4; i++) {

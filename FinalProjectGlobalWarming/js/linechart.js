@@ -33,7 +33,7 @@ var Linechart = (function(){
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(d => {
-                return "<strong>" + d.value.TotalMedals.toFixed(3) + " &#8451</strong> Temperature Difference in <strong>" + d.key + "</strong>";
+                return d.value.TotalMedals != 0?"<strong>" + d.value.TotalMedals.toFixed(3) + " &#8451</strong> Temperature Difference in <strong>" + d.key + "</strong>" :"No Data" ;
             });
 
     /**
@@ -79,6 +79,8 @@ var Linechart = (function(){
             // yScale.domain([-2, (d3.max(processedData.get(countrySelection[0]).entries(), d => d.value.TotalMedals + 1 ))]);
             yScale.domain([-2, 2]);
             
+
+
             svg = d3.select("#linechart")
                 .append("svg")
                 .attr("width", width)
@@ -113,6 +115,13 @@ var Linechart = (function(){
                 .attr("dy", "1em")
                 .style("text-anchor", "middle")
                 .text("Temperature Change °C");
+            svg.append("text")
+            .attr("x", ((width / 2)-50))             
+            .attr("y", 0 - (margin.top / 2))
+            .attr("text-anchor", "middle")  
+            .style("font-size", "16px") 
+            .style("text-decoration", "underline")  
+            .text("Temperature change by Year");
 
         
 

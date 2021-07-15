@@ -275,6 +275,40 @@ function countrySelectionToString() {
     return string;
 }
 
+function countrySelectionToString2() {
+    
+    let string = "",            
+        counter = 0;
+
+    if(getNumberOfCountriesInSelection() == 0)
+     return "The World"
+    // Cicle through the countries in countrySelection.
+    countrySelection.forEach((element, i) => {
+		if(element === null) {
+            return;
+        }
+
+        string += "" + convertIOCCodeToName(element) + "";
+        counter++;
+
+        switch(getNumberOfCountriesInSelection() - counter) {
+            case 0:
+                string += "";
+                break;
+
+            case 1:
+                string += " and ";
+                break;
+
+            default:
+                string += ", "
+                break;
+        }
+    });
+    return string;
+}
+
+
 /** 
  * Changes the currently selected country to a new one
  * 
