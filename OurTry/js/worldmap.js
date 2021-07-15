@@ -11,7 +11,8 @@ var WorldMap = (function(){
     const width = 2400,
         height = 1000;
     var myColor = d3.scaleLinear().domain([-2.5, 0, 3.5])
-       .range(["#0000FF","#FFFFFF","#FF0000"]);
+    //    .range(["#0000FF","#FFFFFF","#FF0000"]);
+       .range(["DodgerBlue","#FFFFFF","OrangeRed"]);
          //.range(["blue", "white", "red"]);
     
     /**
@@ -182,7 +183,7 @@ var WorldMap = (function(){
                         // return myColor(0);
                         // console.log(d.properties.name_long+":"+processedData.hasOwnProperty(d.properties.name_long))
                         // return NOT_SELECTED_COUNTRY_COLOR;
-                        return myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals)
+                        return processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals != 0? myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals): "url(#diagonalHatch)";
                     }
                 })
                 // add a mouseover action to show name label for feature/country
@@ -205,7 +206,7 @@ var WorldMap = (function(){
                     
                     tooltip.classed("hidden", false)
                         .attr("style", "left:"+(mouseCoordinates[0]+offsetL)+"px;top:"+(mouseCoordinates[1]+offsetT)+"px")
-                        .html(d.properties.name);
+                        .html(d3.select(this).classed("non-selectable-country")? d.properties.name +" No Data" :processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals != 0 ?d.properties.name +" " + processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals.toFixed(3)+" &#8451":d.properties.name +" No Data");
                 })
                 .on("mouseout", function (d) {
                     d3.select(this).attr("stroke", function() 
@@ -224,7 +225,7 @@ var WorldMap = (function(){
                             else {
                                 d3.selectAll(".country").classed("country-on", false)
                                     .attr("fill", function(d) {
-                                    return myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals)
+                                    return processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals != 0? myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals): "url(#diagonalHatch)";
                                     // return NOT_SELECTED_COUNTRY_COLOR;
                                     // return "purple";
                                 });
@@ -376,7 +377,7 @@ var WorldMap = (function(){
                     // return myColor(0);
                     // console.log(d.properties.name_long+":"+processedData.hasOwnProperty(d.properties.name_long))
                     // return NOT_SELECTED_COUNTRY_COLOR;
-                    return myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals)
+                    return processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals != 0? myColor(processedData.get(d.properties.name_long).get(yearFilter.initial).TotalMedals): "url(#diagonalHatch)";
                 }
             })
         })

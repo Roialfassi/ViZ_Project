@@ -44,6 +44,7 @@ var TimeSlider = (function(){
                     //         selectedHandle = handle2);
                     // }
                     moveHandle(target);
+                    changeTimeline(xScale.invert(handle1.attr("cx")), 58);
                 })
                 .on("end", d => {
                     // reset radius of selected handle

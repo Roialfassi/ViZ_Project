@@ -35,7 +35,7 @@ var Barchart = (function(){
             // .direction('e')
             .offset([-10, 0])
             .html(d => {
-                return "<strong>" + d.value.TotalMedals.toFixed(3) + "</strong> Temperature Difference in <strong>" + month[d.key-1] + "</strong>";
+                return "<strong>" + d.value.TotalMedals.toFixed(3) + " &#8451</strong> Temperature Difference in <strong>" + month[d.key-1] + "</strong>";
             });
 
     var initialize = function() {
@@ -67,7 +67,7 @@ var Barchart = (function(){
                 // console.log(processedData.get("WLD").get(yearFilter.initial).entries());
                 // console.log(processedData.get("WLD").get(yearFilter.initial));
 
-            yScale.domain([-2, 2]);
+            yScale.domain([-2.5, 2.5]);
             svg = d3.select("#scatterplot")
                 .append("svg")
                 .attr("width", width)
@@ -109,7 +109,7 @@ var Barchart = (function(){
                     svg.append("path")
                         .datum(processedData.get("WLD").get(yearFilter.initial).entries()/*.sort(descending)*/)
                         .attr("class", d => "line id" + i + (i == 0 ? "" : " hidden"))
-                        .attr("stroke", d => getColor(countrySelection[0]))
+                        .attr("stroke","Red" /*d => getColor(countrySelection[0])*/)
                         .attr("d", line);
                     
                 // Dots in Line.
@@ -117,7 +117,7 @@ var Barchart = (function(){
                     .data(processedData.get("WLD").get(yearFilter.initial).entries()/*.sort(descending)*/)
                     .enter().append("circle")
                     .attr("class", d => "dot id" + i + (i == 0 ? "" : " hidden"))
-                    .attr("fill", d => d3.rgb(getColor("WLD")))
+                    .attr("fill","Red"/* d => d3.rgb(getColor("WLD"))*/)
                     .attr("cx", (d, i) => xScale(i))
                     .attr("cy", d => yScale(d.value.TotalMedals))
                     .attr("r", 3)
@@ -171,8 +171,8 @@ var Barchart = (function(){
                 countrySelection.forEach((country, i) => {
                     if(getNumberOfCountriesInSelection() == 0)
                     {
-                        min=-1.5;
-                        max = 1.5;
+                        min=-2;
+                        max = 2;
                         return;
                     }
                     // Skip null elements and hide them.
@@ -252,7 +252,7 @@ var Barchart = (function(){
                     .datum(processedData.get("WLD").get(yearFilter.initial).entries().sort(descending))
                     .transition().duration(animationTime)
                     .ease(d3.easeExp)
-                    .attr("stroke", "#FEEC19")
+                    .attr("stroke", "Red")
                     .attr("d", lineGenerator);
     
                 svg.selectAll(".dot.id" + 0)
@@ -261,11 +261,11 @@ var Barchart = (function(){
                     .duration(animationTime)
                     .ease(d3.easeExp)
                     .attr("cy", d => yScale(d.value.TotalMedals))
-                    .attr("fill", d => {
+                    .attr("fill", "Red"/*d => {
                         return (checkIfYearInInterval(d.key) ? 
                             d3.rgb(getColor(0))
                             :  d3.rgb(getColor(0)).brighter());
-                    })
+                    }*/)
                     .attr("opacity", d => (checkIfYearInInterval(d.key) ? 1 : 0.6))
                     .attr("r", 3/*d => (checkIfYearInInterval(d.key) ? 8 : 4)*/);
     

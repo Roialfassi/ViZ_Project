@@ -33,7 +33,7 @@ var Linechart = (function(){
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(d => {
-                return "<strong>" + d.value.TotalMedals.toFixed(3) + "</strong> Temperature Difference in <strong>" + d.key + "</strong>";
+                return "<strong>" + d.value.TotalMedals.toFixed(3) + " &#8451</strong> Temperature Difference in <strong>" + d.key + "</strong>";
             });
 
     /**
@@ -122,7 +122,7 @@ var Linechart = (function(){
                 svg.append("path")
                     .datum(processedData.get("WLD").entries().sort(descending))
                     .attr("class", d => "line id" + i + (i == 0 ? "" : " hidden"))
-                    .attr("stroke", d => getColor(countrySelection[0]))
+                    .attr("stroke", d => "Red"/*getColor(countrySelection[0])*/)
                     .attr("d", line);
                 
                 // Dots in Line.
@@ -130,7 +130,7 @@ var Linechart = (function(){
                     .data(processedData.get("WLD").entries().sort(descending))
                     .enter().append("circle")
                     .attr("class", d => "dot id" + i + (i == 0 ? "" : " hidden"))
-                    .attr("fill", d => d3.rgb(getColor("WLD")))
+                    .attr("fill", d => /*d3.rgb(getColor("WLD"))*/"Red")
                     .attr("cx", (d, i) => xScale(i))
                     .attr("cy", d => yScale(d.value.TotalMedals))
                     .attr("r", 3)
@@ -291,7 +291,7 @@ var Linechart = (function(){
                 .datum(processedData.get("WLD").entries().sort(descending))
                 .transition().duration(animationTime)
                 .ease(d3.easeExp)
-                .attr("stroke", "#FEEC19")
+                .attr("stroke", /*"#FEEC19"*/"red")
                 .attr("d", lineGenerator);
 
             svg.selectAll(".dot.id" + 0)
@@ -300,11 +300,11 @@ var Linechart = (function(){
                 .duration(animationTime)
                 .ease(d3.easeExp)
                 .attr("cy", d => yScale(d.value.TotalMedals))
-                .attr("fill", d => {
+                .attr("fill",/* d => {
                     return (checkIfYearInInterval(d.key) ? 
                         d3.rgb(getColor(0))
                         :  d3.rgb(getColor(0)).brighter());
-                })
+                }*/ "Red")
                 .attr("opacity", d => (checkIfYearInInterval(d.key) ? 1 : 0.6))
                 .attr("r", 3/*d => (checkIfYearInInterval(d.key) ? 8 : 4)*/);
 
